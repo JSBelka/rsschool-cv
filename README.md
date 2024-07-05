@@ -1,1 +1,2 @@
-# https://jsbelka.github.io/rsschool-cv/
+https://jsbelka.github.io/rsschool-cv/cv
+https://jsbelka.github.io/rsschool-cv/
