@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
+<title>Anna Soboleva</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-menu">
+        <nav class="navigation">
+            <ul class="menu">
+                <li class="menu-item">
+                    <a href="/">Contacts</a>
+                </li>
+                <li class="menu-item">
+                    <a href="/about">Summary</a>
+                </li>
+                <li class="menu-item">
+                    <a href="/contacts">Skills</a>
+                </li>
+                <li class="menu-item">
+                    <a href="/">Code</a>
+                </li>
+                <li class="menu-item">
+                    <a href="/about">Courses</a>
+                </li>
+                <li class="menu-item">
+                    <a href="/contacts">Languages</a>
+                </li>
+            </ul>
+        </nav>
+        </div>
+        <div class="header-center">
+            <h1 class="name">Anna Soboleva</h1>
+            <p class="job">Junior Front-End Developer</p>
+        </div>
+    </header>
+<main>
+    <section>
+        <h3 class="header-section">Contact information</h3>
+        <ul>
+        <li class="sections"><b>Phone:</b> +7911 137 2008</li>
+        <li class="sections"><b>E-mail:</b> barbi-bar@mail.ru</li>
+        <li class="sections"><b>Telegram:</b> @annette_soboleva</li>
+        </ul>
+    </section>
+    <section>
+        <h3 class="header-section">Summary</h3>
+        <p>Since my childhood I have been interested in language systems as a set of different words and rules that help people from different cultures to express themselves. Having started my career as a foreign languages teacher in private schools fifteen years ago, I became proficient in teaching foreign languages.</p>
+        <p>I have a degree in translation, Russian, English and French, as well as a degree in online marketing where I studied how to create effective ads through bright and catching images. I became really interested in creating such images online and decided to take a course in basic JavaScript. My knowledge of languages and marketing really helps me to easily get new skills in such a new sphere for me.</p>
+        <p>I sincerely believe that my skills and interests will help me to achieve my final goal to become a proficient Frontend Developer.</p>
+    </section>
+    <section>
+        <h3 class="header-section">Skills and Proficiency</h3>
+        <ul>
+        <li class="sections"><b>Web development:</b> HTML5, CSS3, JavaScript</li>
+        <li class="sections"><b>Frameworks and Libraries:</b>WebStorm</li>
+        <li class="sections"><b>Version Control:</b> GIT, GitHub</li>
+        </ul>
+    </section>
+    <section>
+        <h3 class="header-section">Code example</h3>
+        <p>Example of the code from Stepik course:</p>
+        <p><i>You have time variables that contain user input data. Write JavaScript code that converts time from one format to another and writes the result to the result variable.Input format: 12-hour time format, where AM and PM are abbreviations used to indicate the time of day.</i></p>
+        <code>
+            let newTime = time.slice(0,5).split(':');
+let hours = newTime[0];
+let minutes = newTime[1];
+let middle = time.slice(-2);
+
+if (middle === 'AM' && hours === '12') {
+result = "00:" + minutes;
+} else if (middle === 'AM') {
+    if(hours<10) {
+       result = "0" + hours + ":" + minutes;
+    } else {
+result = hours + ":" + minutes;
+    }
+} else if (middle === 'PM' && hours === '12') {
+result = hours + ':' + minutes;
+} else {
+result = (parseInt(hours) + 12) + ':' + minutes;
+}
+        </code>
+    </section>
+    <section>
+        <h3 class="header-section">Courses</h3>
+        <ul>
+            <li class="sections">
+                <a href="https://stepik.org/certificate/b7e472e0ac9bdf33347067282404cf47ea9c41db.pdf">JavaScript Basic Level, Stepik (completed)</a>
+            </li>
+        </ul>
+    </section>
+    <section>
+        <h3 class="header-section">Languages</h3>
+        <ul>
+            <li class="sections">Russian - Native</li>
+            <li class="sections">English - C1/C2 Level</li>
+            <li class="sections">French - C1</li>
+            <li class="sections">Spanish - B1</li>
+            <li class="sections">Italian - A1</li>
+        </ul>
+    </section>
+</main>
+    <footer>
+                <a class="link" href="https://github.com/JSBelka">Github</a>
+                <p class="link">2024</p>
+        <img class="logo"
+             src="https://raw.githubusercontent.com/rolling-scopes-school/tasks/61cea2636c5a5f660b1070fa262bbd4acc92ec66/tasks/cv/rs-school-logo.svg" alt="Logo">
+        <a class="link" href="https://rs.school/courses/javascript-ru">JavaScript/Front-end Course</a>
+    </footer>
+</body>
+</html>

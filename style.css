@@ -1,0 +1,8 @@
+
+.navigation {
+    display: flex;
+    flex-direction: row;
+    background-color: azure;
+    text-decoration-color: black;
+    border: 1px solid black;
+}
