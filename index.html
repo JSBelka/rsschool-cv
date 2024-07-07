@@ -1,13 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Anna Soboleva</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="assets/favicon.ico" />
 </head>
 <body>
     <header class="header">
@@ -66,13 +64,27 @@
     <section>
         <h3 class="header-section">Code example</h3>
         <p>Example of the code from Stepik course:</p>
-        <p><i>You have a data variable that contains user input data.
-            Data is an array of boxes, each rearranged as an array of three elements (length, width, height).
-            Write JavaScript code that calculates the total volume of all these boxes combined and writes the result to the result variable.</i></p>
-            <pre>
-                <code>function totalVolume(boxes) {let volume = 0; for(let i = 0; i < boxes.length; i++) {
-                volume += boxes[i][0]*boxes[i][1]*boxes[i][2];} return volume;}</code>
-            </pre>
+        <p><i>You have time variables that contain user input data. Write JavaScript code that converts time from one format to another and writes the result to the result variable.Input format: 12-hour time format, where AM and PM are abbreviations used to indicate the time of day.</i></p>
+        <code>
+            let newTime = time.slice(0,5).split(':');
+let hours = newTime[0];
+let minutes = newTime[1];
+let middle = time.slice(-2);
+
+if (middle === 'AM' && hours === '12') {
+result = "00:" + minutes;
+} else if (middle === 'AM') {
+    if(hours< 10) {
+       result = "0" + hours + ":" + minutes;
+    } else {
+result = hours + ":" + minutes;
+    }
+} else if (middle === 'PM' && hours === '12') {
+result = hours + ':' + minutes;
+} else {
+result = (parseInt(hours) + 12) + ':' + minutes;
+}
+        </code>
     </section>
     <section>
         <h3 class="header-section">Courses</h3>
