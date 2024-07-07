@@ -1,5 +1,15 @@
 .body {
     font-family: "Poppins", sans-serif;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
 }
 * {
     box-sizing: border-box;
@@ -7,7 +17,10 @@
 .navigation {
     display: flex;
     flex-direction: row;
-    background-color: azure;
-    text-decoration-color: black;
+    background-color: darkblue;
+    text-decoration-color: white;
     border: 1px solid black;
+}
+.menu-item {
+    color: azure;
 }
