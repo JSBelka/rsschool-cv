@@ -14,60 +14,48 @@
 <body>
 <header class="header">
         <div class="container">
-        <nav class="navigation">
-            <ul class="navigation-list">
-                <li class="menu-item">
-                    <a href="/">Contacts</a>
-                </li>
-                <li class="menu-item">
-                    <a href="/about">Summary</a>
-                </li>
-                <li class="menu-item">
-                    <a href="/contacts">Skills</a>
-                </li>
-                <li class="menu-item">
-                    <a href="/">Code</a>
-                </li>
-                <li class="menu-item">
-                    <a href="/about">Courses</a>
-                </li>
-                <li class="menu-item">
-                    <a href="/contacts">Languages</a>
-                </li>
+        <nav class="nav">
+            <ul class="nav-list">
+                <li class="nav-item"><a href="#contacts" class="nav-link">Contacts</a></li>
+                <li class="nav-item"><a href="#summary" class="nav-link">Summary</a></li>
+                <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+                <li class="nav-item"><a href="#code" class="nav-link">Code</a></li>
+                <li class="nav-item"><a href="#courses" class="nav-link">Courses</a></li>
+                <li class="nav-item"><a href="#languages" class="nav-link">Languages</a></li>
             </ul>
         </nav>
         </div>
     </header>
 <main>
     <div class="container">
-        <section>
-        <h1 class="name">Anna Soboleva</h1>
+        <section class="section" id="profile">
+        <h1 class="section-title">Anna Soboleva</h1>
         <p class="job">Junior Front-End Developer</p>
         </section>
-    <section>
-        <h3 class="header-section">Contact information</h3>
+    <section class="section" id="contacts">
+        <h2 class="section-title">Contact information</h2>
         <ul>
         <li class="sections"><b>Phone:</b> +7911 137 2008</li>
         <li class="sections"><b>E-mail:</b> barbi-bar@mail.ru</li>
         <li class="sections"><b>Telegram:</b> @annette_soboleva</li>
         </ul>
     </section>
-    <section>
-        <h3 class="header-section">Summary</h3>
+    <section class="section" id="summary">
+        <h2 class="section-title">Summary</h2>
         <p>Since my childhood I have been interested in language systems as a set of different words and rules that help people from different cultures to express themselves. Having started my career as a foreign languages teacher in private schools fifteen years ago, I became proficient in teaching foreign languages.</p>
         <p>I have a degree in translation, Russian, English and French, as well as a degree in online marketing where I studied how to create effective ads through bright and catching images. I became really interested in creating such images online and decided to take a course in basic JavaScript. My knowledge of languages and marketing really helps me to easily get new skills in such a new sphere for me.</p>
         <p>I sincerely believe that my skills and interests will help me to achieve my final goal to become a proficient Frontend Developer.</p>
     </section>
-    <section>
-        <h3 class="header-section">Skills and Proficiency</h3>
+    <section class="section" id="skills">
+        <h2 class="section-title">Skills and Proficiency</h2>
         <ul>
         <li class="sections"><b>Web development:</b> HTML5, CSS3, JavaScript</li>
         <li class="sections"><b>Frameworks and Libraries:</b>WebStorm</li>
         <li class="sections"><b>Version Control:</b> GIT, GitHub</li>
         </ul>
     </section>
-    <section>
-        <h3 class="header-section">Code example</h3>
+    <section class="section" id="code">
+        <h2 class="section-title">Code example</h2>
         <p>Example of the code from Stepik course:</p>
         <p><i>You have time variables that contain user input data. Write JavaScript code that converts time from one format to another and writes the result to the result variable.Input format: 12-hour time format, where AM and PM are abbreviations used to indicate the time of day.</i></p>
         <code>
@@ -91,16 +79,16 @@ result = (parseInt(hours) + 12) + ':' + minutes;
 }
         </code>
     </section>
-    <section>
-        <h3 class="header-section">Courses</h3>
+    <section class="section" id="courses">
+        <h2 class="section-title">Courses</h2>
         <ul>
             <li class="sections">
                 <a href="https://stepik.org/certificate/b7e472e0ac9bdf33347067282404cf47ea9c41db.pdf">JavaScript Basic Level, Stepik (completed)</a>
             </li>
         </ul>
     </section>
-    <section>
-        <h3 class="header-section">Languages</h3>
+    <section class="section" id="languages">
+        <h2 class="section-title">Languages</h2>
         <ul>
             <li class="sections">Russian - Native</li>
             <li class="sections">English - C1/C2 Level</li>
