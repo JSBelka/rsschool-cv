@@ -56,27 +56,15 @@
     </section>
     <section class="section" id="code">
         <h2 class="section-title">Code example</h2>
-        <p>Example of the code from Stepik course:</p>
-        <p><i>You have time variables that contain user input data. Write JavaScript code that converts time from one format to another and writes the result to the result variable.Input format: 12-hour time format, where AM and PM are abbreviations used to indicate the time of day.</i></p>
+        <p>Example of the code from <a class="link" href="https://stepik.org/catalog">Stepik</a> course:</p>
+        <p><i>You have a data variable that contains user input data. Data is an array of boxes, each rearranged as an array of three elements (length, width, height).
+        Write JavaScript code that calculates the total volume of all these boxes combined and writes the result to the result variable.</i></p>
         <code>
-            let newTime = time.slice(0,5).split(':');
-let hours = newTime[0];
-let minutes = newTime[1];
-let middle = time.slice(-2);
-
-if (middle === 'AM' && hours === '12') {
-result = "00:" + minutes;
-} else if (middle === 'AM') {
-    if(hours< 10) {
-       result = "0" + hours + ":" + minutes;
-    } else {
-result = hours + ":" + minutes;
-    }
-} else if (middle === 'PM' && hours === '12') {
-result = hours + ':' + minutes;
-} else {
-result = (parseInt(hours) + 12) + ':' + minutes;
-}
+            function totalVolume(boxes) {
+            let volume = 0;
+            for(let i = 0; i < boxes.length; i++) {
+            volume += boxes[i][0]*boxes[i][1]*boxes[i][2]; }
+            return volume; }
         </code>
     </section>
     <section class="section" id="courses">
