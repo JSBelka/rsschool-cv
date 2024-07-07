@@ -13,14 +13,13 @@
 </head>
 <body>
 <header class="header">
-        <div class="container">
+        <div class="container nav-container">
         <nav class="nav">
             <ul class="nav-list">
                 <li class="nav-item"><a href="#contacts" class="nav-link">Contacts</a></li>
                 <li class="nav-item"><a href="#summary" class="nav-link">Summary</a></li>
-                <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+                <li class="nav-item"><a href="#skills" class="nav-link">Skills and Courses</a></li>
                 <li class="nav-item"><a href="#code" class="nav-link">Code</a></li>
-                <li class="nav-item"><a href="#courses" class="nav-link">Courses</a></li>
                 <li class="nav-item"><a href="#languages" class="nav-link">Languages</a></li>
             </ul>
         </nav>
@@ -28,11 +27,13 @@
     </header>
 
 <main>
-    <div class="container">
+    <div class="container main-container">
         <section class="section" id="profile">
-        <h1 class="section-title">Anna Soboleva</h1>
-        <p class="job">Junior Front-End Developer</p>
+            <img src="./assets/photo.jpg" alt="Photo" width="200" height="240" />
+            <h1 class="section-title">Anna Soboleva</h1>
+            <p class="job"><b>Junior Front-End Developer</b></p>
         </section>
+
     <section class="section" id="contacts">
         <h2 class="section-title">Contact information</h2>
         <ul>
@@ -41,12 +42,14 @@
         <li><b>Telegram:</b> @annette_soboleva</li>
         </ul>
     </section>
+
     <section class="section" id="summary">
         <h2 class="section-title">Summary</h2>
         <p>Since my childhood I have been interested in language systems as a set of different words and rules that help people from different cultures to express themselves. Having started my career as a foreign languages teacher in private schools fifteen years ago, I became proficient in teaching foreign languages.</p>
         <p>I have a degree in translation, Russian, English and French, as well as a degree in online marketing where I studied how to create effective ads through bright and catching images. I became really interested in creating such images online and decided to take a course in basic JavaScript. My knowledge of languages and marketing really helps me to easily get new skills in such a new sphere for me.</p>
         <p>I sincerely believe that my skills and interests will help me to achieve my final goal to become a proficient Frontend Developer.</p>
     </section>
+
     <section class="section" id="skills">
         <h2 class="section-title">Skills and Proficiency</h2>
         <ul>
@@ -54,7 +57,18 @@
         <li><b>Frameworks and Libraries:</b>WebStorm</li>
         <li><b>Version Control:</b> GIT, GitHub</li>
         </ul>
+
+        <h2 class="section-title">Courses</h2>
+        <ul>
+            <li>
+                <a class="link" href="https://stepik.org/certificate/b7e472e0ac9bdf33347067282404cf47ea9c41db.pdf">JavaScript Basic Level, Stepik (completed)</a>
+            </li>
+            <li>
+                <a class="link" href="https://stepik.org/certificate/6a357294041668e39c535739e636475e498c36cb.pdf">JavaScript for beginners (completed)</a>
+            </li>
+        </ul>
     </section>
+
     <section class="section" id="code">
         <h2 class="section-title">Code example</h2>
         <p>Example of the code from <a class="link" href="https://stepik.org/catalog">Stepik</a> course:</p>
@@ -68,17 +82,7 @@
             return volume; }
         </code>
     </section>
-    <section class="section" id="courses">
-        <h2 class="section-title">Courses</h2>
-        <ul>
-            <li>
-                <a class="link" href="https://stepik.org/certificate/b7e472e0ac9bdf33347067282404cf47ea9c41db.pdf">JavaScript Basic Level, Stepik (completed)</a>
-            </li>
-            <li>
-                <a class="link" href="https://stepik.org/certificate/6a357294041668e39c535739e636475e498c36cb.pdf">JavaScript for beginners (completed)</a>
-            </li>
-        </ul>
-    </section>
+
     <section class="section" id="languages">
         <h2 class="section-title">Languages</h2>
         <ul>
@@ -93,10 +97,12 @@
 </main>
 
 <footer>
-    <div class="container">
-                <a class="link" href="https://github.com/JSBelka">Github</a>
-                <p class="link">2024</p>
-        <a class="link" href="https://rs.school/courses/javascript-ru">JavaScript/Front-end Course</a>
+    <div class="container footer-container">
+        <ul class="footer-list">
+            <p class="link">2024</p></li>
+            <li><a class="link" href="https://github.com/JSBelka">Github</a></li>
+            <li><a class="link" href="https://rs.school/courses/javascript-ru">JavaScript/Front-end Course</a></li>
+        </ul>
     </div>
 </footer>
 </body>
