@@ -146,7 +146,7 @@ a {
 .logo {
     width: 121px;
     height: 45px;
-    background-image: url(./assets/rs-school-logo.svg);
+    background-image: url(rs-school-logo.svg);
     background-size: contain;
     background-repeat: no-repeat;
 }
