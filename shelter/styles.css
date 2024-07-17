@@ -57,9 +57,13 @@
     flex-direction: row;
 justify-content: center;
     align-items: flex-end;
+    min-width: 1200px;
+    min-height: 728px;
+    margin: 40px 180px 40px 0;
 }
 .content{
     display: flex;
+    flex-direction: column;
     max-width: 460px;
     max-height: 322px;
 }
