@@ -1,19 +1,25 @@
 * {
     margin: 0;
 }
-.body{
-    background-image: url(start-screen-gradient-background.jpg);
-    background-size: cover;
-}
+
 .header{
+    position: absolute;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: 40px 30px 40px 818px;
+    align-items: flex-start;
+    margin: 40px 30px;
+}
+.logo{
+    flex: 0 1 auto;
+}
+.nav{
+    flex: 0 1 auto;
 }
 .startScreen{
     min-height: 908px;
-
+    background-image: url(start-screen-gradient-background.jpg);
+    background-size: cover;
 }
 .about{
     min-height: 588px;
