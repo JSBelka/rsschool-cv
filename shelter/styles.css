@@ -4,6 +4,9 @@
 
 .header{
     position: absolute;
+
+}
+.container{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -11,10 +14,23 @@
     margin: 40px 30px;
 }
 .logo{
-    flex: 0 1 auto;
+
 }
-.nav{
-    flex: 0 1 auto;
+.title{
+    color: rgb(241 205 179);
+    font-family: "Georgia", sans-serif;
+}
+.nav-list{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style: none;
+    max-width: 443px;
+    max-height: 27px;
+}
+.link{
+    color: rgb(205 205 205);
+    text-decoration: none;
 }
 .startScreen{
     min-height: 908px;
