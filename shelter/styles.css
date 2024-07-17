@@ -1,11 +1,20 @@
 * {
     margin: 0;
 }
+@font-face {
+    font-family: Georgia;
+    src: url(georgia.ttf);
+}
 
 .header{
     position: absolute;
-
+    margin: 0 auto;
 }
+
+.header{
+    width: 100%;
+}
+
 .container{
     display: flex;
     flex-direction: row;
@@ -18,7 +27,13 @@
 }
 .title{
     color: rgb(241 205 179);
-    font-family: "Georgia", sans-serif;
+    font-family: Georgia, Regular, sans-serif;
+    font-size: 32px;
+}
+.subtitle{
+    font-family: Arial, Regular, sans-serif;
+    font-size: 13px;
+    color: white;
 }
 .nav-list{
     display: flex;
@@ -37,6 +52,21 @@
     background-image: url(start-screen-gradient-background.jpg);
     background-size: cover;
 }
+.startScreenContent {
+    display: flex;
+    flex-direction: row;
+justify-content: center;
+    align-items: flex-end;
+}
+.content{
+    display: flex;
+    max-width: 460px;
+    max-height: 322px;
+}
+.puppy{
+    max-width: 698px;
+    max-height: 728px;
+ }
 .about{
     min-height: 588px;
 }
