@@ -51,7 +51,7 @@ html {
     text-decoration: none;
 }
 .startScreen{
-    min-height: 908px;
+    height: 908px;
     background-image: url(start-screen-gradient-background.jpg);
     background-size: cover;
 }
@@ -88,4 +88,18 @@ justify-content: center;
 }
 .footer{
     height: 350px;
+    background-image: url(footer-background.png);
+    background-size: cover;
+}
+.footer-content{
+    display: flex;
+    flex-direction: row;
+justify-content: space-between;
+    align-items: baseline;
+}
+.contacts{
+
+}
+.title-footer{
+    color: white;
 }
