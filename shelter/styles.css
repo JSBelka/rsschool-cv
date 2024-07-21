@@ -15,10 +15,6 @@ html {
     position: absolute;
 }
 
-.body .footer{
-    width: 100%;
-}
-
 .container{
     display: flex;
     flex-direction: row;
@@ -55,6 +51,7 @@ html {
     display: flex;
     align-items: flex-end;
     height: 908px;
+    width: 100%;
     background-image: url(start-screen-gradient-background.jpg);
     background-size: cover;
     margin: 0;
@@ -112,9 +109,14 @@ justify-content: space-between;
 }
 .contacts{
     width: 278px;
+    margin-bottom: 60px;
+}
+.title-footer{
+    font-size: 35px;
 }
 .locations{
     width: 302px;
+    margin-bottom: 60px;
 }
 .title-footer{
     color: white;
