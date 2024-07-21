@@ -1,6 +1,9 @@
 * {
     margin: 0;
 }
+html {
+    scroll-behavior: smooth;
+}
 @font-face {
     font-family: Georgia;
     src: url(georgia.ttf);
@@ -71,6 +74,18 @@ justify-content: center;
     max-width: 698px;
     max-height: 728px;
  }
-.about{
-    min-height: 588px;
+.About{
+    height: 588px;
+}
+.Pets{
+    height: 877px;
+}
+.Help{
+    height: 611px;
+}
+.Donation{
+    height: 462px;
+}
+.footer{
+    height: 350px;
 }
