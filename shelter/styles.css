@@ -94,7 +94,10 @@ html {
     align-items: center;
 }
 .donation-content{
-    margin: 80px 182px 100px 183px;
+    width: 915px;
+    height: 282px;
+    margin-left: 183px;
+    margin-top: 80px;
 }
 .footer{
     height: 350px;
