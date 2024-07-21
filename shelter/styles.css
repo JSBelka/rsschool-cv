@@ -1,6 +1,5 @@
-* {
-    margin: 0;
-    padding: 0;
+*{
+    margin:0;
 }
 html {
     scroll-behavior: smooth;
@@ -13,16 +12,19 @@ html {
 
 .header{
     position: absolute;
-}
-
-.container{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: flex-start;
+    margin: 30px 40px 818px 40px;
+}
+
+.container{
+
 }
 .logo{
-
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 .title{
     color: rgb(241 205 179);
@@ -54,27 +56,25 @@ html {
     width: 100%;
     background-image: url(start-screen-gradient-background.jpg);
     background-size: cover;
-    margin: 0;
 }
 .startScreenContent {
     display: flex;
     flex-direction: row;
-justify-content: center;
-    align-items: flex-end;
-    min-width: 1200px;
-    min-height: 728px;
+    justify-content: space-between;
+    align-items: center;
+    width: 1200px;
+    height: 728px;
     margin: 180px 40px 0 40px;
 }
 .content{
     display: flex;
     flex-direction: column;
-    max-width: 460px;
-    max-height: 322px;
+    width: 460px;
 }
 .puppy{
-    flex: 1;
-    max-width: 698px;
-    max-height: 728px;
+    width: 698px;
+    height: 728px;
+    align-self: stretch;
  }
 .About{
     height: 588px;
@@ -101,23 +101,42 @@ justify-content: center;
 .footer-content{
     display: flex;
     flex-direction: row;
-justify-content: space-between;
-    align-items: flex-end;
+    align-items: center;
+    justify-content: space-between;
     width: 1200px;
     height: 310px;
     margin: 40px 40px 0 40px;
 }
+
 .contacts{
-    width: 278px;
-    margin-bottom: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    max-width: 278px;
+}
+.mail .phone{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.contacts-text{
+    color: rgba(241, 205, 179, 1);
+    font-size: 20px;
 }
 .title-footer{
     font-size: 35px;
 }
 .locations{
-    width: 302px;
-    margin-bottom: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    max-width: 302px;
 }
 .title-footer{
     color: white;
+}
+.footer-puppy{
+    align-self: stretch;
 }
