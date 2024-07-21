@@ -1,9 +1,11 @@
 * {
     margin: 0;
+    padding: 0;
 }
 html {
     scroll-behavior: smooth;
 }
+
 @font-face {
     font-family: Georgia;
     src: url(georgia.ttf);
@@ -11,10 +13,10 @@ html {
 
 .header{
     position: absolute;
-    margin: 0 auto;
+    margin: 30px 40px 818px 40px;
 }
 
-.header{
+.body .footer{
     width: 100%;
 }
 
@@ -23,7 +25,6 @@ html {
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
-    margin: 40px 30px;
 }
 .logo{
 
@@ -40,7 +41,8 @@ html {
 }
 .nav-list{
     display: flex;
-    flex-direction: row;
+
+    align-items: stretch;
     justify-content: space-between;
     list-style: none;
     max-width: 443px;
@@ -51,9 +53,12 @@ html {
     text-decoration: none;
 }
 .startScreen{
+    display: flex;
+    align-items: flex-end;
     height: 908px;
     background-image: url(start-screen-gradient-background.jpg);
     background-size: cover;
+    margin: 0;
 }
 .startScreenContent {
     display: flex;
@@ -62,7 +67,7 @@ justify-content: center;
     align-items: flex-end;
     min-width: 1200px;
     min-height: 728px;
-    margin: 40px 180px 40px 0;
+    margin: 180px 40px 0 40px;
 }
 .content{
     display: flex;
@@ -71,6 +76,7 @@ justify-content: center;
     max-height: 322px;
 }
 .puppy{
+    flex: 1;
     max-width: 698px;
     max-height: 728px;
  }
@@ -79,12 +85,14 @@ justify-content: center;
 }
 .Pets{
     height: 877px;
+    background-color: rgba(246, 246, 246, 1);
 }
 .Help{
     height: 611px;
 }
 .Donation{
     height: 462px;
+    background-color: rgba(246, 246, 246, 1);
 }
 .footer{
     height: 350px;
@@ -95,10 +103,15 @@ justify-content: center;
     display: flex;
     flex-direction: row;
 justify-content: space-between;
-    align-items: baseline;
+    align-items: flex-end;
+    width: 1200px;
+    height: 310px;
 }
 .contacts{
-
+    width: 278px;
+}
+.locations{
+    width: 302px;
 }
 .title-footer{
     color: white;
