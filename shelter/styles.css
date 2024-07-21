@@ -89,6 +89,12 @@ html {
 .Donation{
     height: 462px;
     background-color: rgba(246, 246, 246, 1);
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+}
+.donation-content{
+    margin: 80px 182px 100px 183px;
 }
 .footer{
     height: 350px;
