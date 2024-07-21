@@ -13,7 +13,6 @@ html {
 
 .header{
     position: absolute;
-    margin: 30px 40px 818px 40px;
 }
 
 .body .footer{
@@ -96,8 +95,11 @@ justify-content: center;
 }
 .footer{
     height: 350px;
+    width: 100%;
     background-image: url(footer-background.png);
     background-size: cover;
+    display: flex;
+    align-items: flex-end;
 }
 .footer-content{
     display: flex;
@@ -106,6 +108,7 @@ justify-content: space-between;
     align-items: flex-end;
     width: 1200px;
     height: 310px;
+    margin: 40px 40px 0 40px;
 }
 .contacts{
     width: 278px;
