@@ -88,6 +88,7 @@ a {
 .paragraph{
     font-family: Arial, sans-serif;
     font-size: 13px;
+    color: rgba(205, 205, 205, 1)
 }
 .h1{
     font-family: Georgia, Regular, sans-serif;
