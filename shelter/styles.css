@@ -67,6 +67,7 @@ a {
     display: flex;
     align-items: flex-end;
     height: 908px;
+    width: 100%;
     background-image: url(start-screen-gradient-background.jpg);
     background-size: cover;
 }
