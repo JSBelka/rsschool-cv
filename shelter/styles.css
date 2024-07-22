@@ -11,7 +11,11 @@ a {
     font-family: Georgia;
     src: url(georgia.ttf);
 }
-
+@media (max-width: 768px) {
+    .section {
+        width: 100%;
+    }
+}
 .header {
     position: absolute;
     display: flex;
