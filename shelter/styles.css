@@ -1,59 +1,68 @@
-*{
+* {
     margin:0;
 }
 html {
     scroll-behavior: smooth;
 }
-
+a {
+    text-decoration: none;
+}
 @font-face {
     font-family: Georgia;
     src: url(georgia.ttf);
 }
 
-.header{
+.header {
     position: absolute;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: 30px 40px 818px 40px;
+    width: 1200px;
+    margin-left: 40px;
+    margin-top: 30px;
 }
 
-.container{
-
-}
-.logo{
+.logo {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
-.title{
+.title {
     color: rgb(241 205 179);
     font-family: Georgia, Regular, sans-serif;
     font-size: 32px;
+    font-weight: 100;
 }
-.subtitle{
+.subtitle {
     font-family: Arial, Regular, sans-serif;
     font-size: 13px;
     color: white;
 }
-.nav-list{
+.nav-list {
     display: flex;
-
-    align-items: stretch;
+    align-items: center;
     justify-content: space-between;
     list-style: none;
     max-width: 443px;
     max-height: 27px;
 }
-.link{
-    color: rgb(205 205 205);
-    text-decoration: none;
+.nav-link {
+    transition: 0.3s;
+    line-height: 27px;
 }
-.startScreen{
+.nav-item a {
+    color: rgb(205 205 205);
+    max-width: 443px;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+.nav-item a:hover {
+    color: black;
+}
+.StartScreen {
     display: flex;
     align-items: flex-end;
     height: 908px;
-    width: 100%;
     background-image: url(start-screen-gradient-background.jpg);
     background-size: cover;
 }
@@ -63,13 +72,23 @@ html {
     justify-content: space-between;
     align-items: center;
     width: 1200px;
-    height: 728px;
-    margin: 180px 40px 0 40px;
+    margin-left:40px;
 }
-.content{
+.content {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     width: 460px;
+    height: 322px;
+}
+.paragraph{
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+}
+.h1{
+    font-family: Georgia, Regular, sans-serif;
+    font-weight: 100;
+    color: rgba(255, 255, 255, 1)
 }
 .puppy{
     width: 698px;
