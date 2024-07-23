@@ -14,11 +14,7 @@ a {
     font-family: Georgia;
     src: url(georgia.ttf);
 }
-@media (max-width: 768px) {
-    .section {
-        width: 100%;
-    }
-}
+
 .header {
     position: absolute;
     display: flex;
@@ -63,23 +59,19 @@ a {
 .nav-link {
     transition: 0.3s;
     line-height: 27px;
+    cursor: pointer;
 }
 .nav-link-about {
-    text-decoration: underline;
-    text-decoration-color: rgb(241 205 179);
-    text-decoration-thickness: 3px;
+    border-bottom: 3px solid rgb(241 205 179);
 }
 .nav-item a {
-    color: rgb(205 205 205);
+    color: rgba(0, 0, 0, 1);
     max-width: 443px;
     text-decoration: none;
-    transition: color 0.5s;
+    transition: color 0.3s;
 }
 .nav-item a:hover {
-    color: black;
-    text-decoration: underline;
-    text-decoration-color: rgb(241 205 179);
-    text-decoration-thickness: 3px;
+    color: rgba(205, 205, 205, 1);
 }
 .StartScreen {
     display: flex;
@@ -94,7 +86,7 @@ a {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    width: 1200px;
+    width: auto;
     margin-left:40px;
 }
 .content {
@@ -128,11 +120,23 @@ a {
     width: 207px;
     height: 52px;
     border-radius: 40px;
+    cursor: pointer;
+    transition: background 0.3s;
 }
-.button-text {
+.button-primary:hover {
+    background: rgba(253, 220, 196, 1);
+}
+.nav-link-button {
+
+}
+.nav-item-about {
     font-size: 17px;
-    margin-left: 45px;
-    margin-top: 15px;
+    font-family: Arial, Regular, sans-serif;
+    margin: 15px 45px;
+}
+.nav-item-about a {
+    color: rgba(0, 0, 0, 1);
+    text-decoration: none;
 }
 .puppy {
     width: 698px;
@@ -188,7 +192,7 @@ a {
     line-height: 25px;
     padding: 2px 0;
 }
-.Pets {
+.OurFriends {
     height: 877px;
     background-color: rgba(246, 246, 246, 1);
 }
@@ -286,6 +290,7 @@ a {
     justify-content: space-between;
     width: 302px;
     height: 46px;
+    font-size: 17px;
 }
 .London {
     display: flex;
