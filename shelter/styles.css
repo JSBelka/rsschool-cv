@@ -212,12 +212,12 @@ a {
 .heading-help {
     color: rgba(84, 84, 84, 1);
     font-size: 33px;
-    font-weight: 100;
     font-family: Georgia, Regular, sans-serif;
     letter-spacing: 2px;
     line-height: 35px;
     width: 308px;
     height: 90px;
+    text-align: center;
 }
 .help-grid {
     width: 1026px;
@@ -225,9 +225,18 @@ a {
     margin-left: 87px;
     margin-bottom: 0;
     display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.grid-first-line {
+    display: flex;
     flex-direction: row;
     justify-content: space-between;
-    flex-wrap: wrap;
+}
+.grid-second-line {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
 .pet-food {
     display: flex;
@@ -373,9 +382,10 @@ a {
     font-size: 22px;
     line-height: 23px;
     align-self: center;
+    flex-grow: 1;
 }
 .title-footer {
-    font-size: 35px;
+    font-size: 33px;
     font-weight: 100;
     font-family: Georgia, Regular, sans-serif;
     letter-spacing: 2px;
@@ -404,6 +414,7 @@ a {
     justify-content: space-between;
     width: 302px;
     height: 32px;
+    font-size: 17px;
 }
 
 .footer-puppy {
