@@ -68,6 +68,7 @@ a {
     color: rgba(205, 205, 205, 1);
     max-width: 443px;
     text-decoration: none;
+    font-family: Arial, Regular, sans-serif;
     transition: color 0.3s;
 }
 .nav-item a:hover {
@@ -126,12 +127,9 @@ a {
 .button-primary:hover {
     background: rgba(253, 220, 196, 1);
 }
-.nav-link-button {
-
-}
 .nav-item-about {
     font-size: 17px;
-    font-family: Arial, Regular, sans-serif;
+    font-family: Georgia, Regular, sans-serif;
     margin: 15px 45px;
 }
 .nav-item-about a {
@@ -227,6 +225,11 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+.help-text {
+    color: rgba(84, 84, 84, 1);
+    font-family: Georgia, Regular, sans-serif;
+    letter-spacing: 1px;
 }
 .grid-first-line {
     display: flex;
