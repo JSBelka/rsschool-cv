@@ -145,7 +145,41 @@ a {
     margin-left: 40px;
     display: flex;
     flex-direction: row;
-
+    justify-content: center;
+}
+.about-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 430px;
+    height: 380px;
+}
+.about-heading {
+    color: rgba(84, 84, 84, 1);
+    font-size: 30px;
+    font-weight: 100;
+    font-family: Georgia, Regular, sans-serif;
+    letter-spacing: 2px;
+    line-height: 35px;
+    width: 370px;
+}
+.about-paragraph-1 {
+    color: rgba(76, 76, 76, 1);
+    width: 430px;
+    height: 96px;
+    font-family: Arial, Regular, sans-serif;
+    font-size: 14px;
+    line-height: 25px;
+    padding: 2px 0;
+}
+.about-paragraph-2 {
+    color: rgba(76, 76, 76, 1);
+    width: 430px;
+    height: 144px;
+    font-family: Arial, Regular, sans-serif;
+    font-size: 14px;
+    line-height: 25px;
+    padding: 2px 0;
 }
 .Pets {
     height: 877px;
