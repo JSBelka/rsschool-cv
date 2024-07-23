@@ -1,8 +1,11 @@
 * {
-    margin:0;
+    margin: 0;
 }
 html {
     scroll-behavior: smooth;
+}
+.body {
+    margin: 0;
 }
 a {
     text-decoration: none;
@@ -36,19 +39,29 @@ a {
     font-family: Georgia, Regular, sans-serif;
     font-size: 32px;
     font-weight: 100;
+    letter-spacing: 3px;
 }
 .subtitle {
     font-family: Arial, Regular, sans-serif;
     font-size: 13px;
     color: white;
+    letter-spacing: 2px;
 }
 .nav-list {
+    position: relative;
     display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: space-between;
     list-style: none;
-    max-width: 443px;
-    max-height: 27px;
+    margin-top: 16px;
+    margin-left: 5px;
+    width: 443px;
+    height: 27px;
+    transition: 1s;
+}
+.nav-list:hover {
+    background-color: white;
 }
 .nav-link {
     transition: 0.3s;
@@ -62,12 +75,15 @@ a {
 }
 .nav-item a:hover {
     color: black;
+    text-decoration: underline;
+    text-decoration-color: rgb(241 205 179);
+    text-decoration-thickness: 3px;
 }
 .StartScreen {
     display: flex;
     align-items: flex-end;
     height: 908px;
-    width: 100%;
+    margin: 0;
     background-image: url(start-screen-gradient-background.jpg);
     background-size: cover;
 }
@@ -86,45 +102,72 @@ a {
     width: 460px;
     height: 322px;
 }
-.paragraph{
+.paragraph {
     font-family: Arial, sans-serif;
-    font-size: 13px;
-    color: rgba(205, 205, 205, 1)
+    font-size: 14px;
+    color: rgba(205, 205, 205, 1);
+    height: 72px;
+    width: 460px;
+    line-height: 25px;
+    padding: 2px 0;
 }
-.h1{
+.h1 {
     font-family: Georgia, Regular, sans-serif;
     font-weight: 100;
-    color: rgba(255, 255, 255, 1)
+    font-size: 40px;
+    color: rgba(255, 255, 255, 1);
+    width: 310px;
+    height: 114px;
 }
-.puppy{
+.button-primary {
+    background-color: rgba(241, 205, 179, 1);
+    color: rgba(41, 41, 41, 1);
+    border: none;
+    width: 207px;
+    height: 52px;
+    border-radius: 40px;
+}
+.button-text {
+    font-size: 17px;
+    margin-left: 45px;
+    margin-top: 15px;
+}
+.puppy {
     width: 698px;
     height: 728px;
     align-self: stretch;
  }
-.About{
+.About {
     height: 588px;
 }
-.Pets{
+.about-content {
+    margin-top: 80px;
+    margin-left: 40px;
+    display: flex;
+    flex-direction: row;
+
+}
+.Pets {
     height: 877px;
     background-color: rgba(246, 246, 246, 1);
 }
-.Help{
+.Help {
     height: 611px;
 }
-.Donation{
+.Donation {
     height: 462px;
     background-color: rgba(246, 246, 246, 1);
     display:flex;
     flex-direction: row;
     align-items: center;
 }
-.donation-content{
+.donation-content {
     width: 915px;
     height: 282px;
     margin-left: 183px;
     margin-top: 80px;
 }
-.footer{
+.footer {
     height: 350px;
     width: 100%;
     background-image: url(footer-background.png);
@@ -132,7 +175,7 @@ a {
     display: flex;
     align-items: flex-end;
 }
-.footer-content{
+.footer-content {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -143,7 +186,7 @@ a {
     margin-top: 40px;
 }
 
-.contacts{
+.contacts {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -163,16 +206,16 @@ a {
     justify-content: space-between;
     max-width: 239px;
 }
-.contacts-text{
+.contacts-text {
     color: rgba(241, 205, 179, 1);
     font-family: "Georgia", sans-serif;
     font-size: 20px;
     align-self: center;
 }
-.title-footer{
+.title-footer {
     font-size: 35px;
 }
-.locations{
+.locations {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -180,21 +223,21 @@ a {
     margin-top: 16px;
     margin-bottom: 60px;
 }
-.Boston{
+.Boston {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     max-width: 302px;
 }
-.London{
+.London {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     max-width: 302px;
 }
-.title-footer{
+.title-footer {
     color: white;
 }
-.footer-puppy{
+.footer-puppy {
     align-self: stretch;
 }
