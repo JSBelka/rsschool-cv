@@ -65,13 +65,13 @@ a {
     border-bottom: 3px solid rgb(241 205 179);
 }
 .nav-item a {
-    color: rgba(0, 0, 0, 1);
+    color: rgba(205, 205, 205, 1);
     max-width: 443px;
     text-decoration: none;
     transition: color 0.3s;
 }
 .nav-item a:hover {
-    color: rgba(205, 205, 205, 1);
+    color: rgba(0, 0, 0, 1);
 }
 .StartScreen {
     display: flex;
@@ -202,6 +202,8 @@ a {
 .help-content {
     margin-top: 80px;
     margin-left: 40px;
+    height: 431px;
+    width: 1200px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -216,6 +218,92 @@ a {
     line-height: 35px;
     width: 308px;
     height: 90px;
+}
+.help-grid {
+    width: 1026px;
+    height: 281px;
+    margin-left: 87px;
+    margin-bottom: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.pet-food {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 82px;
+    height: 113px;
+}
+.transportation {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 150px;
+    height: 113px;
+}
+.toys {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 60px;
+    height: 113px;
+}
+.bowls {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 153px;
+    height: 113px;
+}
+.shampoos {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 101px;
+    height: 113px;
+}
+.vitamins {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 89px;
+    height: 113px;
+}
+.medicines {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 101px;
+    height: 113px;
+}
+.collars {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 165px;
+    height: 113px;
+}
+.sleeping {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 143px;
+    height: 113px;
+}
+.help-img {
+    width: 60px;
+    height: 60px;
 }
 .Donation {
     height: 462px;
