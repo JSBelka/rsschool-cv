@@ -165,11 +165,11 @@ a {
 }
 .heading {
     color: rgba(84, 84, 84, 1);
-    font-size: 35px;
+    font-size: 34px;
     font-weight: 100;
     font-family: Georgia, Regular, sans-serif;
     letter-spacing: 2px;
-    line-height: 35px;
+    line-height: 40px;
     width: 370px;
 }
 .about-paragraph-1 {
@@ -209,10 +209,11 @@ a {
 }
 .heading-help {
     color: rgba(84, 84, 84, 1);
-    font-size: 33px;
+    font-size: 34px;
+    font-weight: 100;
     font-family: Georgia, Regular, sans-serif;
     letter-spacing: 2px;
-    line-height: 35px;
+    line-height: 40px;
     width: 308px;
     height: 90px;
     text-align: center;
@@ -320,16 +321,70 @@ a {
 .Donation {
     height: 462px;
     background-color: rgba(246, 246, 246, 1);
-    display:flex;
-    flex-direction: row;
-    align-items: center;
 }
 .donation-content {
     width: 915px;
     height: 282px;
     margin-left: 183px;
     margin-top: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
+.donation-content-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 380px;
+    height: 282px;
+}
+.heading-donation {
+    color: rgba(84, 84, 84, 1);
+    font-size: 34px;
+    font-family: Georgia, Regular, sans-serif;
+    font-weight: 100;
+    letter-spacing: 2px;
+    line-height: 40px;
+    width: 300px;
+    height: 90px;
+}
+.donation-bank-name {
+    color: rgba(84, 84, 84, 1);
+    font-size: 17px;
+    font-family: Georgia, Regular, sans-serif;
+    letter-spacing: 1px;
+    width: 307px;
+    height: 17px;
+}
+.credit-card {
+    background-color: rgba(241, 205, 179, 1);
+    color: rgba(84, 84, 84, 1);
+    border: none;
+    border-radius: 10px;
+    width: 411px;
+    height: 43px;
+}
+.credit-card-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 10px 15px;
+}
+.nav-item-donation {
+    font-size: 22px;
+    font-family: Georgia, Regular, sans-serif;
+    letter-spacing: 1px;
+}
+.legal-info {
+    font-size: 15px;
+    color: rgba(178, 178, 178, 1);
+    font-family: Arial, Regular, sans-serif;
+    line-height: 22px;
+    font-weight: 100;
+    height: 72px;
+    width: 380px;
+}
+
 .footer {
     height: 350px;
     width: 100%;
