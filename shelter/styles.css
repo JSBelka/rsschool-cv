@@ -4,8 +4,17 @@
 html {
     scroll-behavior: smooth;
 }
+.pets-site {
+    width: 100%;
+    height: 100%;
+}
 .body {
-    margin: 0;
+    margin: 0 auto;
+    width: 1280px;
+    height: 3796px;
+}
+.main {
+    width: 100%;
 }
 a {
     text-decoration: none;
@@ -222,6 +231,9 @@ a {
     cursor: pointer;
     transition: background 0.3s;
 }
+.button-pets:hover {
+    background: rgba(253, 220, 196, 1);
+}
 .button-arrow {
     width: 50px;
     height: 50px;
@@ -229,6 +241,10 @@ a {
     border-radius: 90px;
 }
 
+.arrow-left {
+    margin: 15px 19px;
+    font-weight: 200;
+}
 .slider {
     width: 1200px;
     height: 435px;
@@ -241,8 +257,17 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-items: center;
     width: 270px;
     height: 435px;
+    background: white;
+    border-radius: 15px;
+}
+.pets-name {
+    font-size: 18px;
+    font-family: Georgia, Regular, sans-serif;
+    color: rgba(84, 84, 84, 1);
+    letter-spacing: 2px;
 }
 .button-pets-card {
     color: rgba(41, 41, 41, 1);
@@ -250,6 +275,20 @@ a {
     width: 207px;
     height: 52px;
     border-radius: 40px;
+    margin-bottom: 30px;
+}
+.button-pets-card:hover {
+    background: rgba(253, 220, 196, 1);
+}
+.button-pets-card-item {
+    text-align: center;
+    margin: 15px 45px;
+}
+.button-pets-card-item a {
+    font-size: 17px;
+    font-family: Georgia, Regular, sans-serif;
+    color: rgba(41, 41, 41, 1);
+    text-decoration: none;
 }
 .nav-item-pets {
     text-align: center;
