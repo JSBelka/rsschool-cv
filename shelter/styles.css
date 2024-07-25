@@ -294,6 +294,7 @@ a {
     height: 52px;
     border-radius: 40px;
     margin-bottom: 30px;
+    cursor: pointer;
 }
 .button-pets-card:hover {
     background: rgba(253, 220, 196, 1);
@@ -583,6 +584,10 @@ a {
     font-family: "Georgia", sans-serif;
     font-size: 22px;
     line-height: 23px;
+    text-decoration: none;
+}
+.contacts-text-locations a {
+    text-decoration: none;
 }
 .title-footer {
     font-size: 33px;

@@ -14,8 +14,8 @@ html {
     flex-direction: row;
     justify-content: space-between;
     width: 1200px;
-    height: 120px;
-    margin: 30px 40px;
+    height: 60px;
+    margin: 30px 40px 30px 40px;
     align-items: center;
 }
 
@@ -32,7 +32,12 @@ html {
     font-weight: 100;
     letter-spacing: 3px;
     margin: 0;
+    text-decoration: none;
 }
+title a {
+    text-decoration: none;
+}
+
 .subtitle {
     font-family: Arial, Regular, sans-serif;
     font-size: 13px;
@@ -56,6 +61,8 @@ html {
     transition: 0.3s;
     line-height: 27px;
     cursor: pointer;
+    text-decoration: none;
+    color: rgba(84, 84, 84, 1);
 }
 .nav-link-pets {
     border-bottom: 3px solid rgb(241 205 179);
@@ -78,6 +85,7 @@ html {
     background-color: rgba(246, 246, 246, 1);
 }
 .petsContent {
+    height: 1162px;
     margin: 80px 40px 100px 40px;
     display: flex;
     flex-direction: column;
@@ -101,6 +109,7 @@ html {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 .card {
     display: flex;
@@ -125,6 +134,7 @@ html {
     height: 52px;
     border-radius: 40px;
     margin-bottom: 30px;
+    cursor: pointer;
 }
 .button-pets-card:hover {
     background: rgba(253, 220, 196, 1);
@@ -139,11 +149,44 @@ html {
     color: rgba(41, 41, 41, 1);
     text-decoration: none;
 }
-
-
-
-
-
+.navigation {
+    width: 340px;
+    height: 52px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.button-arrow-1 {
+    width: 52px;
+    height: 52px;
+    border: 2px solid rgba(205, 205, 205, 1);
+    border-radius: 90px;
+}
+.button-arrow-2 {
+    width: 52px;
+    height: 52px;
+    border: 2px solid rgba(241, 205, 179, 1);
+    border-radius: 90px;
+    background-color: rgba(241, 205, 179, 1);
+}
+.button-arrow-3 {
+    width: 52px;
+    height: 52px;
+    border: 2px solid rgba(241, 205, 179, 1);
+    border-radius: 90px;
+}
+.arrow {
+    margin: 21px 10px 9px 14px;
+}
+.arrow2 {
+    margin: 21px 13px 9px 20px;
+}
+.number1 {
+    color: black;
+    text-align: center;
+    font-family: Georgia, Regular, sans-serif;
+    font-weight: 200;
+}
 .footer {
     height: 350px;
     width: 100%;
