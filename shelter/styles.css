@@ -31,6 +31,7 @@ a {
     height: 60px;
     margin-left: 40px;
     margin-top: 30px;
+    align-items: center;
 }
 
 .logo {
@@ -45,13 +46,14 @@ a {
     font-size: 32px;
     font-weight: 100;
     letter-spacing: 3px;
+    margin: 0;
 }
 .subtitle {
     font-family: Arial, Regular, sans-serif;
     font-size: 13px;
     color: white;
     letter-spacing: 2px;
-    padding: 0;
+    margin: 0;
 }
 .nav-list {
     position: relative;
@@ -60,8 +62,8 @@ a {
     align-items: center;
     justify-content: space-between;
     list-style: none;
-    margin-top: 16px;
-    margin-left: 5px;
+    margin: 0;
+    padding: 0;
     width: 443px;
     height: 27px;
     transition: 1s;
@@ -109,12 +111,13 @@ a {
 }
 .paragraph {
     font-family: Arial, sans-serif;
-    font-size: 14px;
+    font-size: 15px;
     color: rgba(205, 205, 205, 1);
     height: 72px;
     width: 460px;
     line-height: 25px;
     padding: 2px 0;
+    margin: 0;
 }
 .h1 {
     font-family: Georgia, Regular, sans-serif;
@@ -123,6 +126,7 @@ a {
     color: rgba(255, 255, 255, 1);
     width: 310px;
     height: 114px;
+    margin: 0;
 }
 .button-primary {
     background-color: rgba(241, 205, 179, 1);
@@ -151,10 +155,16 @@ a {
     height: 728px;
     align-self: stretch;
  }
+.About {
+    display: flex;
+    height: 588px;
+}
 .about-content {
-    margin-bottom: 100px;
+    width: 1200px;
+    height: 408px;
     margin-top: 80px;
     margin-left: 40px;
+    margin-bottom: 100px;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -204,13 +214,16 @@ a {
     margin: 0;
 }
 .pets {
+    display: flex;
     height: 877px;
     background-color: rgba(246, 246, 246, 1);
 }
 .pets-content {
     width: 1200px;
     height: 697px;
-    margin: 0 40px;
+    margin-left: 40px;
+    margin-top: 80px;
+    padding: 0;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -226,6 +239,7 @@ a {
     width: 400px;
     height: 90px;
     text-align: center;
+    margin: 0;
 }
 .button-pets {
     background-color: rgba(241, 205, 179, 1);
@@ -307,9 +321,13 @@ a {
 .nav-link-pets {
     text-decoration: none;
 }
-
+.Help {
+    display: flex;
+    height: 611px;
+    padding: 0;
+}
 .help-content {
-    margin: 80px 40px 100px 40px;
+    margin: 80px 40px 0 40px;
     height: 431px;
     width: 1200px;
     display: flex;
@@ -327,11 +345,11 @@ a {
     width: 308px;
     height: 90px;
     text-align: center;
+    margin: 0;
 }
 .help-grid {
     width: 1026px;
     height: 281px;
-    margin-left: 87px;
     margin-bottom: 0;
     display: flex;
     flex-direction: column;
@@ -429,16 +447,23 @@ a {
     height: 60px;
 }
 .Donation {
+    display: flex;
     height: 462px;
+    padding: 0;
     background-color: rgba(246, 246, 246, 1);
 }
 .donation-content {
     width: 915px;
     height: 282px;
-    margin: 160px 182px 100px 183px;
+    margin: 80px 182px 0 183px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
+}
+.donation-dog {
+    width: 505px;
+    height: 261px;
 }
 .donation-content-text {
     display: flex;
@@ -446,6 +471,7 @@ a {
     justify-content: space-between;
     width: 380px;
     height: 282px;
+    align-self: stretch;
 }
 .heading-donation {
     color: rgba(84, 84, 84, 1);
@@ -474,6 +500,8 @@ a {
     border-radius: 10px;
     width: 360px;
     height: 43px;
+    display: flex;
+    align-items: center;
 }
 .credit-card-content {
     display: flex;
@@ -494,10 +522,10 @@ a {
     font-size: 12px;
     color: rgba(178, 178, 178, 1);
     font-family: Arial, Regular, sans-serif;
-    line-height: 22px;
+    line-height: 19px;
     font-weight: 100;
-    height: 72px;
     width: 380px;
+    height: 72px;
     margin: 0;
 }
 
@@ -555,16 +583,15 @@ a {
     font-family: "Georgia", sans-serif;
     font-size: 22px;
     line-height: 23px;
-    align-self: center;
-    flex-grow: 1;
 }
 .title-footer {
     font-size: 33px;
     font-weight: 100;
     font-family: Georgia, Regular, sans-serif;
     letter-spacing: 2px;
-    line-height: 35px;
+    line-height: 37px;
     color: white;
+    margin: 0;
 }
 
 .locations {
@@ -573,6 +600,7 @@ a {
     justify-content: space-between;
     width: 302px;
     height: 234px;
+    padding: 0;
 }
 .Boston {
     display: flex;
@@ -581,14 +609,15 @@ a {
     width: 302px;
     height: 46px;
     font-size: 17px;
+    align-items: center;
 }
 .London {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     width: 302px;
     height: 32px;
     font-size: 17px;
+    align-items: center;
 }
 
 .footer-puppy {
