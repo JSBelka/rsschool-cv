@@ -1,6 +1,4 @@
-* {
-    margin: 0;
-}
+
 html {
     scroll-behavior: smooth;
 }
@@ -30,6 +28,7 @@ a {
     flex-direction: row;
     justify-content: space-between;
     width: 1200px;
+    height: 60px;
     margin-left: 40px;
     margin-top: 30px;
 }
@@ -38,6 +37,7 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    height: 60px;
 }
 .title {
     color: rgb(241 205 179);
@@ -51,6 +51,7 @@ a {
     font-size: 13px;
     color: white;
     letter-spacing: 2px;
+    padding: 0;
 }
 .nav-list {
     position: relative;
@@ -150,7 +151,6 @@ a {
     height: 728px;
     align-self: stretch;
  }
-
 .about-content {
     margin-bottom: 100px;
     margin-top: 80px;
@@ -169,6 +169,7 @@ a {
     justify-content: space-between;
     width: 430px;
     height: 380px;
+    margin: 0;
 }
 .heading {
     color: rgba(84, 84, 84, 1);
@@ -178,7 +179,10 @@ a {
     letter-spacing: 2px;
     line-height: 40px;
     width: 370px;
+    height: 90px;
+    margin: 0;
 }
+
 .about-paragraph-1 {
     color: rgba(76, 76, 76, 1);
     width: 430px;
@@ -187,6 +191,7 @@ a {
     font-size: 14px;
     line-height: 25px;
     padding: 2px 0;
+    margin: 0;
 }
 .about-paragraph-2 {
     color: rgba(76, 76, 76, 1);
@@ -196,6 +201,7 @@ a {
     font-size: 14px;
     line-height: 25px;
     padding: 2px 0;
+    margin: 0;
 }
 .pets {
     height: 877px;
@@ -204,7 +210,7 @@ a {
 .pets-content {
     width: 1200px;
     height: 697px;
-    margin: 80px 40px 100px 40px;
+    margin: 0 40px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -240,10 +246,8 @@ a {
     border: 2px solid rgba(241, 205, 179, 1);
     border-radius: 90px;
 }
-
-.arrow-left {
-    margin: 15px 19px;
-    font-weight: 200;
+.arrow {
+    margin: 23px 19px;
 }
 .slider {
     width: 1200px;
@@ -445,13 +449,14 @@ a {
 }
 .heading-donation {
     color: rgba(84, 84, 84, 1);
-    font-size: 34px;
+    font-size: 33px;
     font-family: Georgia, Regular, sans-serif;
     font-weight: 100;
     letter-spacing: 2px;
     line-height: 40px;
     width: 300px;
     height: 90px;
+    margin: 0;
 }
 .donation-bank-name {
     color: rgba(84, 84, 84, 1);
@@ -460,6 +465,7 @@ a {
     letter-spacing: 1px;
     width: 307px;
     height: 17px;
+    margin: 0;
 }
 .credit-card {
     background-color: rgba(241, 205, 179, 1);
@@ -473,10 +479,13 @@ a {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: 10px 15px;
+    margin: 0;
+    padding: 10px 15px;
+    width: 319px;
+    height: 23px;
 }
 .nav-item-donation {
-    font-size: 22px;
+    font-size: 20px;
     font-family: Georgia, Regular, sans-serif;
     letter-spacing: 1px;
     align-self: center;
@@ -489,6 +498,7 @@ a {
     font-weight: 100;
     height: 72px;
     width: 380px;
+    margin: 0;
 }
 
 .footer {
