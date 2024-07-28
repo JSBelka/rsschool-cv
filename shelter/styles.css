@@ -168,11 +168,11 @@ a {
     margin-bottom: 100px;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
     align-items: center;
 }
 .about-img {
     align-self: stretch;
+    margin-left: 175px;
 }
 .about-text {
     display: flex;
@@ -180,7 +180,7 @@ a {
     justify-content: space-between;
     width: 430px;
     height: 380px;
-    margin: 0;
+    margin-left: 120px;
 }
 .heading {
     color: rgba(84, 84, 84, 1);
