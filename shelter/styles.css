@@ -275,6 +275,15 @@ a {
     border-radius: 90px;
     margin-right: 53px;
 }
+.button-arrow-1-link {
+    cursor: pointer;
+}
+.button-arrow-1:hover {
+    background: rgba(253, 220, 196, 1);
+}
+.button-arrow-2:hover {
+    background: rgba(253, 220, 196, 1);
+}
 .button-arrow-2 {
     width: 50px;
     height: 50px;
