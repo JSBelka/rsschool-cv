@@ -3,7 +3,7 @@ html {
     scroll-behavior: smooth;
 }
 .pets-site {
-    width: 100%;
+    width: 1280px;
     height: 100%;
 }
 .body {
@@ -43,14 +43,14 @@ a {
 .title {
     color: rgb(241 205 179);
     font-family: Georgia, Regular, sans-serif;
-    font-size: 32px;
+    font-size: 30px;
     font-weight: 100;
     letter-spacing: 3px;
     margin: 0;
 }
 .subtitle {
     font-family: Arial, Regular, sans-serif;
-    font-size: 13px;
+    font-size: 12px;
     color: white;
     letter-spacing: 2px;
     margin: 0;
@@ -73,7 +73,12 @@ a {
     line-height: 27px;
     cursor: pointer;
 }
-.nav-link-about {
+
+.nav-item-about {
+    color: rgba(205, 205, 205, 1);
+    max-width: 443px;
+    font-family: Arial, Regular, sans-serif;
+    font-size: 15px;
     border-bottom: 3px solid rgb(241 205 179);
 }
 .nav-item a {
@@ -81,10 +86,12 @@ a {
     max-width: 443px;
     text-decoration: none;
     font-family: Arial, Regular, sans-serif;
-    transition: color 0.3s;
+    font-size: 15px;
+    transition: 0.3s;
 }
 .nav-item a:hover {
-    color: rgba(0, 0, 0, 1);
+    color: rgba(250, 250, 250, 1);
+    border-bottom: 3px solid rgb(241 205 179);
 }
 .StartScreen {
     display: flex;
@@ -98,7 +105,6 @@ a {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
     width: auto;
     margin-left:40px;
 }
@@ -108,6 +114,7 @@ a {
     justify-content: space-between;
     width: 460px;
     height: 322px;
+    margin-top: 163px;
 }
 .paragraph {
     font-family: Arial, sans-serif;
@@ -115,18 +122,21 @@ a {
     color: rgba(205, 205, 205, 1);
     height: 72px;
     width: 460px;
-    line-height: 25px;
+    line-height: 22px;
     padding: 2px 0;
     margin: 0;
 }
 .h1 {
     font-family: Georgia, Regular, sans-serif;
     font-weight: 100;
-    font-size: 40px;
+    font-size: 42px;
+    line-height: 53px;
+    letter-spacing: 1px;
     color: rgba(255, 255, 255, 1);
     width: 310px;
     height: 114px;
     margin: 0;
+    padding: 4px 0;
 }
 .button-primary {
     background-color: rgba(241, 205, 179, 1);
@@ -141,12 +151,15 @@ a {
 .button-primary:hover {
     background: rgba(253, 220, 196, 1);
 }
-.nav-item-about {
-    font-size: 17px;
+.nav-item-about-friend {
     font-family: Georgia, Regular, sans-serif;
-    margin: 15px 45px;
+    font-weight: 100;
+    font-size: 17px;
+    line-height: 20px;
+    letter-spacing: 1px;
+    text-align: center;
 }
-.nav-item-about a {
+.nav-item-about-friend a {
     color: rgba(0, 0, 0, 1);
     text-decoration: none;
 }
@@ -154,6 +167,7 @@ a {
     width: 698px;
     height: 728px;
     align-self: stretch;
+    margin-left: 42px;
  }
 .About {
     display: flex;
@@ -167,11 +181,11 @@ a {
     margin-bottom: 100px;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
     align-items: center;
 }
 .about-img {
     align-self: stretch;
+    margin-left: 175px;
 }
 .about-text {
     display: flex;
@@ -179,15 +193,15 @@ a {
     justify-content: space-between;
     width: 430px;
     height: 380px;
-    margin: 0;
+    margin-left: 120px;
 }
 .heading {
     color: rgba(84, 84, 84, 1);
-    font-size: 34px;
+    font-size: 35px;
     font-weight: 100;
     font-family: Georgia, Regular, sans-serif;
     letter-spacing: 2px;
-    line-height: 40px;
+    line-height: 45px;
     width: 370px;
     height: 90px;
     margin: 0;
@@ -198,7 +212,7 @@ a {
     width: 430px;
     height: 96px;
     font-family: Arial, Regular, sans-serif;
-    font-size: 14px;
+    font-size: 15px;
     line-height: 25px;
     padding: 2px 0;
     margin: 0;
@@ -208,7 +222,7 @@ a {
     width: 430px;
     height: 144px;
     font-family: Arial, Regular, sans-serif;
-    font-size: 14px;
+    font-size: 15px;
     line-height: 25px;
     padding: 2px 0;
     margin: 0;
@@ -231,11 +245,11 @@ a {
 }
 .heading-pets {
     color: rgba(84, 84, 84, 1);
-    font-size: 34px;
+    font-size: 35px;
     font-weight: 100;
     font-family: Georgia, Regular, sans-serif;
     letter-spacing: 2px;
-    line-height: 40px;
+    line-height: 45px;
     width: 400px;
     height: 90px;
     text-align: center;
@@ -254,11 +268,32 @@ a {
 .button-pets:hover {
     background: rgba(253, 220, 196, 1);
 }
-.button-arrow {
+.button-arrow-1 {
     width: 50px;
     height: 50px;
     border: 2px solid rgba(241, 205, 179, 1);
     border-radius: 90px;
+    margin-right: 53px;
+    transition: 0.3s;
+}
+.button-arrow-1-link {
+    cursor: pointer;
+}
+.button-arrow-1:hover {
+    background: rgba(253, 220, 196, 1);
+    border:none;
+}
+.button-arrow-2:hover {
+    background: rgba(253, 220, 196, 1);
+    border:none;
+}
+.button-arrow-2 {
+    width: 50px;
+    height: 50px;
+    border: 2px solid rgba(241, 205, 179, 1);
+    border-radius: 90px;
+    margin-left: 53px;
+    transition: 0.3s;
 }
 .arrow {
     margin: 23px 19px;
@@ -268,7 +303,6 @@ a {
     height: 435px;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     align-items: center;
 }
 .card {
@@ -280,6 +314,18 @@ a {
     height: 435px;
     background: white;
     border-radius: 15px;
+    margin-right: 90px;
+}
+.card-Woody {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 270px;
+    height: 435px;
+    background: white;
+    border-radius: 15px;
+    margin-right: 0;
 }
 .pets-name {
     font-size: 18px;
@@ -290,11 +336,12 @@ a {
 .button-pets-card {
     color: rgba(41, 41, 41, 1);
     border: 2px solid rgba(241, 205, 179, 1);
-    width: 207px;
+    width: 190px;
     height: 52px;
     border-radius: 40px;
     margin-bottom: 30px;
     cursor: pointer;
+    transition: background 0.3s;
 }
 .button-pets-card:hover {
     background: rgba(253, 220, 196, 1);
@@ -304,7 +351,7 @@ a {
     margin: 15px 45px;
 }
 .button-pets-card-item a {
-    font-size: 17px;
+    font-size: 19px;
     font-family: Georgia, Regular, sans-serif;
     color: rgba(41, 41, 41, 1);
     text-decoration: none;
@@ -314,7 +361,7 @@ a {
     margin: 15px 45px;
 }
 .nav-item-pets a {
-    font-size: 17px;
+    font-size: 19px;
     font-family: Georgia, Regular, sans-serif;
     color: rgba(41, 41, 41, 1);
     text-decoration: none;
@@ -342,7 +389,7 @@ a {
     font-weight: 100;
     font-family: Georgia, Regular, sans-serif;
     letter-spacing: 2px;
-    line-height: 40px;
+    line-height: 45px;
     width: 308px;
     height: 90px;
     text-align: center;
@@ -353,23 +400,15 @@ a {
     height: 281px;
     margin-bottom: 0;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 .help-text {
     color: rgba(84, 84, 84, 1);
     font-family: Georgia, Regular, sans-serif;
     letter-spacing: 1px;
-}
-.grid-first-line {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-.grid-second-line {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    font-size: 20px;
+    margin-top: 27px;
 }
 .pet-food {
     display: flex;
@@ -386,6 +425,7 @@ a {
     align-items: center;
     width: 150px;
     height: 113px;
+    margin-left: 120px;
 }
 .toys {
     display: flex;
@@ -394,6 +434,7 @@ a {
     align-items: center;
     width: 60px;
     height: 113px;
+    margin-left: 120px;
 }
 .bowls {
     display: flex;
@@ -402,6 +443,7 @@ a {
     align-items: center;
     width: 153px;
     height: 113px;
+    margin-left: 120px;
 }
 .shampoos {
     display: flex;
@@ -410,6 +452,7 @@ a {
     align-items: center;
     width: 101px;
     height: 113px;
+    margin-left: 120px;
 }
 .vitamins {
     display: flex;
@@ -418,6 +461,8 @@ a {
     align-items: center;
     width: 89px;
     height: 113px;
+    margin-left: 84px;
+    margin-top: 55px;
 }
 .medicines {
     display: flex;
@@ -426,6 +471,8 @@ a {
     align-items: center;
     width: 101px;
     height: 113px;
+    margin-left: 120px;
+    margin-top: 55px;
 }
 .collars {
     display: flex;
@@ -434,6 +481,8 @@ a {
     align-items: center;
     width: 165px;
     height: 113px;
+    margin-left: 120px;
+    margin-top: 55px;
 }
 .sleeping {
     display: flex;
@@ -442,6 +491,8 @@ a {
     align-items: center;
     width: 143px;
     height: 113px;
+    margin-left: 120px;
+    margin-top: 55px;
 }
 .help-img {
     width: 60px;
@@ -476,11 +527,11 @@ a {
 }
 .heading-donation {
     color: rgba(84, 84, 84, 1);
-    font-size: 33px;
+    font-size: 35px;
     font-family: Georgia, Regular, sans-serif;
     font-weight: 100;
     letter-spacing: 2px;
-    line-height: 40px;
+    line-height: 45px;
     width: 300px;
     height: 90px;
     margin: 0;
@@ -488,19 +539,20 @@ a {
 .donation-bank-name {
     color: rgba(84, 84, 84, 1);
     font-size: 14px;
-    font-family: Georgia, Regular, sans-serif;
+    font-family: Arial, Regular, sans-serif;
     letter-spacing: 1px;
     width: 307px;
     height: 17px;
     margin: 0;
+    line-height: 17px;
 }
 .credit-card {
     background-color: rgba(241, 205, 179, 1);
     color: rgba(84, 84, 84, 1);
     border: none;
     border-radius: 10px;
-    width: 360px;
-    height: 43px;
+    width: 350px;
+    height: 45px;
     display: flex;
     align-items: center;
 }
@@ -514,16 +566,20 @@ a {
     height: 23px;
 }
 .nav-item-donation {
-    font-size: 20px;
     font-family: Georgia, Regular, sans-serif;
+    font-size: 20px;
     letter-spacing: 1px;
     align-self: center;
+    width: 274px;
+    height: 23px;
+    line-height: 17px;
+
 }
 .legal-info {
     font-size: 12px;
     color: rgba(178, 178, 178, 1);
     font-family: Arial, Regular, sans-serif;
-    line-height: 19px;
+    line-height: 18px;
     font-weight: 100;
     width: 380px;
     height: 72px;
@@ -541,8 +597,6 @@ a {
 .footer-content {
     display: flex;
     flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
     width: 1200px;
     height: 310px;
     margin-left:40px;
@@ -556,6 +610,8 @@ a {
     align-items: flex-start;
     width: 278px;
     height: 234px;
+    margin-top: 16px;
+    margin-right: 160px;
 }
 .mail {
     display: flex;
@@ -585,16 +641,17 @@ a {
     font-size: 22px;
     line-height: 23px;
     text-decoration: none;
+    margin-left: 20px;
 }
 .contacts-text-locations a {
     text-decoration: none;
 }
 .title-footer {
-    font-size: 33px;
+    font-size: 35px;
     font-weight: 100;
     font-family: Georgia, Regular, sans-serif;
     letter-spacing: 2px;
-    line-height: 37px;
+    line-height: 44px;
     color: white;
     margin: 0;
 }
@@ -606,11 +663,12 @@ a {
     width: 302px;
     height: 234px;
     padding: 0;
+    margin-top: 16px;
+    margin-right: 160px;
 }
 .Boston {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     width: 302px;
     height: 46px;
     font-size: 17px;
