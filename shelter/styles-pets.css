@@ -28,7 +28,7 @@ html {
 .title {
     color: rgba(84, 84, 84, 1);
     font-family: Georgia, Regular, sans-serif;
-    font-size: 32px;
+    font-size: 30px;
     font-weight: 100;
     letter-spacing: 3px;
     margin: 0;
@@ -40,7 +40,7 @@ title a {
 
 .subtitle {
     font-family: Arial, Regular, sans-serif;
-    font-size: 13px;
+    font-size: 12px;
     color: rgba(41, 41, 41, 1);
     letter-spacing: 2px;
     margin: 0;
@@ -72,6 +72,7 @@ title a {
     max-width: 443px;
     text-decoration: none;
     font-family: Arial, Regular, sans-serif;
+    font-size: 15px;
     transition: color 0.3s;
 }
 .nav-item a:hover {
@@ -97,6 +98,7 @@ title a {
     font-weight: 100;
     font-size: 35px;
     letter-spacing: 2px;
+    line-height: 48px;
     color: rgba(84, 84, 84, 1);
     width: 400px;
     height: 90px;
@@ -111,7 +113,7 @@ title a {
     justify-content: space-between;
     flex-wrap: wrap;
 }
-.card {
+.card-1 {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -120,6 +122,18 @@ title a {
     height: 435px;
     background: white;
     border-radius: 15px;
+    margin-top: 15px;
+}
+.card-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 270px;
+    height: 435px;
+    background: white;
+    border-radius: 15px;
+    margin-top: 30px;
 }
 .pets-name {
     font-size: 18px;
@@ -127,13 +141,29 @@ title a {
     color: rgba(84, 84, 84, 1);
     letter-spacing: 2px;
 }
+.pets-name-2 {
+    font-size: 18px;
+    height: 30px;
+    font-family: Georgia, Regular, sans-serif;
+    color: rgba(84, 84, 84, 1);
+    letter-spacing: 2px;
+}
 .button-pets-card {
     color: rgba(41, 41, 41, 1);
     border: 2px solid rgba(241, 205, 179, 1);
-    width: 207px;
-    height: 52px;
+    width: 188px;
+    height: 48px;
     border-radius: 40px;
     margin-bottom: 30px;
+    cursor: pointer;
+}
+.button-pets-card-2 {
+    color: rgba(41, 41, 41, 1);
+    border: 2px solid rgba(241, 205, 179, 1);
+    width: 188px;
+    height: 48px;
+    border-radius: 40px;
+    margin-bottom: 35px;
     cursor: pointer;
 }
 .button-pets-card:hover {
@@ -144,7 +174,7 @@ title a {
     margin: 15px 45px;
 }
 .button-pets-card-item a {
-    font-size: 17px;
+    font-size: 19px;
     font-family: Georgia, Regular, sans-serif;
     color: rgba(41, 41, 41, 1);
     text-decoration: none;
@@ -198,8 +228,6 @@ title a {
 .footer-content {
     display: flex;
     flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
     width: 1200px;
     height: 310px;
     margin-left:40px;
@@ -213,6 +241,8 @@ title a {
     align-items: flex-start;
     width: 278px;
     height: 234px;
+    margin-top: 16px;
+    margin-right: 160px;
 }
 .mail {
     display: flex;
@@ -241,13 +271,18 @@ title a {
     font-family: "Georgia", sans-serif;
     font-size: 22px;
     line-height: 23px;
+    text-decoration: none;
+    margin-left: 20px;
+}
+.contacts-text-locations a {
+    text-decoration: none;
 }
 .title-footer {
-    font-size: 33px;
+    font-size: 35px;
     font-weight: 100;
     font-family: Georgia, Regular, sans-serif;
     letter-spacing: 2px;
-    line-height: 37px;
+    line-height: 44px;
     color: white;
     margin: 0;
 }
@@ -259,11 +294,12 @@ title a {
     width: 302px;
     height: 234px;
     padding: 0;
+    margin-top: 16px;
+    margin-right: 160px;
 }
 .Boston {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     width: 302px;
     height: 46px;
     font-size: 17px;
