@@ -3,7 +3,7 @@ html {
     scroll-behavior: smooth;
 }
 .pets-site {
-    width: 100%;
+    width: 1280px;
     height: 100%;
 }
 .body {
@@ -98,7 +98,6 @@ a {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
     width: auto;
     margin-left:40px;
 }
@@ -108,6 +107,7 @@ a {
     justify-content: space-between;
     width: 460px;
     height: 322px;
+    margin-top: 163px;
 }
 .paragraph {
     font-family: Arial, sans-serif;
@@ -127,6 +127,7 @@ a {
     width: 310px;
     height: 114px;
     margin: 0;
+    padding: 4px 0;
 }
 .button-primary {
     background-color: rgba(241, 205, 179, 1);
