@@ -74,10 +74,9 @@ a {
     cursor: pointer;
 }
 
-.nav-item-about a {
+.nav-item-about {
     color: rgba(205, 205, 205, 1);
     max-width: 443px;
-    text-decoration: none;
     font-family: Arial, Regular, sans-serif;
     font-size: 15px;
     border-bottom: 3px solid rgb(241 205 179);
@@ -92,6 +91,7 @@ a {
 }
 .nav-item a:hover {
     color: rgba(250, 250, 250, 1);
+    border-bottom: 3px solid rgb(241 205 179);
 }
 .StartScreen {
     display: flex;
@@ -151,11 +151,7 @@ a {
 .button-primary:hover {
     background: rgba(253, 220, 196, 1);
 }
-.nav-item-about {
-    font-size: 19px;
-    font-family: Georgia, Regular, sans-serif;
-    margin: 15px 45px;
-}
+
 .nav-item-about a {
     color: rgba(0, 0, 0, 1);
     text-decoration: none;
