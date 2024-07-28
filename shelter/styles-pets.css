@@ -64,19 +64,23 @@ title a {
     text-decoration: none;
     color: rgba(84, 84, 84, 1);
 }
-.nav-link-pets {
-    border-bottom: 3px solid rgb(241 205 179);
-}
 .nav-item a {
     color: rgba(84, 84, 84, 1);
     max-width: 443px;
     text-decoration: none;
     font-family: Arial, Regular, sans-serif;
     font-size: 15px;
-    transition: color 0.3s;
+    transition: 0.3s;
 }
 .nav-item a:hover {
-    color: rgba(0, 0, 0, 1);
+    color: rgba(41, 41, 41, 1);
+    border-bottom: 3px solid rgb(241 205 179);
+}
+.nav-item-our-pets {
+    font-family: Arial, Regular, sans-serif;
+    font-size: 15px;
+    color: rgba(41, 41, 41, 1);
+    border-bottom: 3px solid rgb(241 205 179);
 }
 .Pets {
     display: flex;
@@ -156,6 +160,7 @@ title a {
     border-radius: 40px;
     margin-bottom: 30px;
     cursor: pointer;
+    transition: background 0.3s;
 }
 .button-pets-card-2 {
     color: rgba(41, 41, 41, 1);
