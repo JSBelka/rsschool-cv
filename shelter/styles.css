@@ -1,4 +1,3 @@
-
 html {
     scroll-behavior: smooth;
 }
@@ -168,7 +167,7 @@ a {
     height: 728px;
     align-self: stretch;
     margin-left: 42px;
- }
+}
 .About {
     display: flex;
     height: 588px;
@@ -686,3 +685,4 @@ a {
 .footer-puppy {
     align-self: stretch;
 }
+
