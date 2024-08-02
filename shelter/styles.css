@@ -9,7 +9,8 @@ html {
     padding: 0;
     margin: 0;
 }
-@media screen and (max-width: 767px) {
+
+@media screen and (max-width: 768px) {
     .StartScreen {
         padding: 30px 30px 0;
         max-height: 1165px;
@@ -59,7 +60,19 @@ html {
     .burger-menu:before {
         top: 10px;
     }
-
+    .About {
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 72px;
+        padding-top: 37px;
+    }
+    .About .about-text {
+        padding-left: 0;
+        max-width: 430px;
+    }
+    .About .about-img {
+        padding-right: 0;
+    }
     .Donation {
         flex-direction: column-reverse;
         align-items: center;
@@ -249,57 +262,31 @@ header .logo-subtitle {
     gap: 20px;
     padding: 50px 0 100px;
 }
-.about-content {
-    width: 1200px;
-    height: 408px;
-    margin-top: 80px;
-    margin-left: 40px;
-    margin-bottom: 100px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
 .about-img {
     max-width: 350px;
     padding-right: 30px;
 }
 .about-text {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 430px;
-    height: 380px;
-    margin-left: 120px;
+    max-width: 500px;
+    padding-left: 70px;
+    padding-top: 14px;
 }
-.heading {
+.about-title {
     color: rgba(84, 84, 84, 1);
     font-size: 35px;
-    font-weight: 100;
+    font-weight: 200;
     font-family: Georgia, Regular, sans-serif;
-    letter-spacing: 2px;
-    line-height: 45px;
-    width: 370px;
-    height: 90px;
-    margin: 0;
+    letter-spacing: 0.06em;
+    line-height: 130%;
+    padding-bottom: 24px;
 }
-
-.about-paragraph-1 {
+.about-paragraph {
     color: rgba(76, 76, 76, 1);
     width: 430px;
-    height: 96px;
+    height: 279px;
     font-family: Arial, Regular, sans-serif;
     font-size: 15px;
-    line-height: 25px;
-    padding: 2px 0;
-    margin: 0;
-}
-.about-paragraph-2 {
-    color: rgba(76, 76, 76, 1);
-    width: 430px;
-    height: 144px;
-    font-family: Arial, Regular, sans-serif;
-    font-size: 15px;
-    line-height: 25px;
+    line-height: 24px;
     padding: 2px 0;
     margin: 0;
 }
