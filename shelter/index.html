@@ -18,13 +18,16 @@
             <span class="logo-title">Cozy House</span>
             <span class="logo-subtitle">Shelter for pets in Boston</span>
         </a>
-        <div class="nav">
+        <nav class="nav">
         <ul class="nav-list">
             <li class="nav-item-about">About the shelter</li>
             <li><a href="index-pets.html">Our pets</a></li>
             <li><a href="#help">Help the shelter</a></li>
             <li><a href="#contacts">Contacts</a></li>
         </ul>
+        </nav>
+        <div class="header-burger">
+            <span class="burger-menu"></span>
         </div>
     </header>
 
@@ -163,27 +166,29 @@
 
         <!-- Donation  -->
         <div class="background-friends">
-        <section class="Donation">
             <div class="wrap">
-            <div class="donation-content">
-                <img class="donation-dog" src="donation-dog.png" alt="donation-dog"/>
-                <div class="donation-content-text">
-                    <h2 class="heading-donation">You can also make a donation</h2>
-                    <p class="donation-bank-name">Name of the bank / Type of bank account</p>
-                    <div class="credit-card">
-                        <div class="credit-card-content">
-                            <img src="credit-card.svg" alt="Credit card"/>
-                            <p class="nav-item-donation"><a class="nav-link">8380 2880 8028 8791 7435</a></p>
-                        </div>
+                <div class="Donation">
+                    <div class="donation-image">
+                        <picture>
+                            <img src="donation-dog.png" alt="donation-dog"/>
+                        </picture>
                     </div>
+                    <div class="donation-text">
+                    <h2 class="heading-donation">You can also<br>
+                        make a donation</h2>
+                    <p class="donation-bank-name">Name of the bank / Type of bank account</p>
+                    <p class="credit-card">
+                        <img class="credit-card-img" src="credit-card.svg" alt="Credit card"/>
+                        <a href="#">
+                            <span>8380 2880 8028 87917435</span>
+                        </a>
+                    </p>
                     <p class="legal-info"><i>Legal information and lorem ipsum dolor sit amet, consectetur adipiscing elit.
                         Maecenas a ipsum at libero sagittis dignissim sed ac diam. Praesent ultrices maximus tortor et
                         vulputate. Interdum et malesuada fames ac ante ipsum primis in faucibus.</i></p>
+                    </div>
                 </div>
-
             </div>
-            </div>
-        </section>
         </div>
     </main>
 
@@ -221,7 +226,8 @@
         </div>
             <div class="footer-puppy">
                 <picture>
-            <img src="footer-puppy.png" alt="Puppy"/>
+                    <source srcset="footer-puppy320.png" media="(max-width: 320px)">
+                    <img src="footer-puppy.png" alt="Puppy"/>
                 </picture>
             </div>
         </div>
