@@ -8,35 +8,51 @@
     <link rel="stylesheet" href="styles.css">
     <title>Shelter</title>
 </head>
-<body class="body">
-<div class="pets-site">
+
+<body>
+<!-- Header -->
+<div class="background-gradient">
+    <div class="wrap">
     <header class="header">
         <div class="logo">
             <p class="title"><a class="nav-link">Cozy House</a></p>
             <p class="subtitle">Shelter for pets in Boston</p>
         </div>
+        <div class="nav">
         <ul class="nav-list">
             <li class="nav-item-about">About the shelter</li>
             <li class="nav-item"><a class="nav-link" href="index-pets.html">Our pets</a></li>
             <li class="nav-item"><a class="nav-link" href="#help">Help the shelter</a></li>
             <li class="nav-item"><a class="nav-link" href="#contacts">Contacts</a></li>
         </ul>
+        </div>
     </header>
-    <main>
-        <div class="StartScreen">
-            <div class="startScreenContent">
+
+        <!-- Not only -->
+            <section class="startScreenContent">
                 <div class="content">
                     <h1 class="h1">Not only people need a house</h1>
                     <p class="paragraph">We offer to give a chance to a little and nice puppy with an extremely wide and open heart.
                         He or she will love you more than anybody else in the world, you will see!</p>
-                    <div class="button-primary">
-                        <p class="nav-item-about-friend"><a class="nav-link-button" href="#friends">Make a friend</a></p>
-                    </div>
+                        <a class="button-primary" href="#friends">Make a friend</a>
                 </div>
+                <div class="startScreen-img">
+                <picture>
+                    <source srcset="start-screen-puppy320.png" media="(max-width: 320px)">
+                    <source srcset="start-screen-puppy768.png" media="(max-width: 768px)">
+                    <source srcset="start-screen-puppy.png" media="(max-width: 1280px)">
                 <img class="puppy" src="start-screen-puppy.png" alt="Puppy"/>
-            </div>
-        </div>
+                </picture>
+                </div>
+            </section>
+    </div>
+</div>
 
+<!-- Main -->
+    <main>
+
+        <!-- About -->
+        <div class="wrap">
         <section class="About" id="about">
             <div class="about-content">
                 <img class="about-img" src="about-pets.png" alt="About pets"/>
@@ -52,6 +68,11 @@
                 </div>
             </div>
         </section>
+        </div>
+
+        <!-- Our Friends -->
+        <div class="background-friends">
+        <div class="wrap">
         <section class="pets" id="friends">
             <div class="pets-content">
                 <h2 class="heading-pets">Our friends who<br>
@@ -90,7 +111,11 @@
                 </div>
             </div>
         </section>
+        </div>
+        </div>
 
+        <!-- Help -->
+        <div class="wrap">
         <section class="Help" id="help">
             <div class="help-content">
                 <h2 class="heading-help">How you can help our shelter</h2>
@@ -134,8 +159,12 @@
                 </div>
             </div>
         </section>
+        </div>
 
+        <!-- Donation  -->
+        <div class="background-friends">
         <section class="Donation">
+            <div class="wrap">
             <div class="donation-content">
                 <img class="donation-dog" src="donation-dog.png" alt="donation-dog"/>
                 <div class="donation-content-text">
@@ -153,11 +182,15 @@
                 </div>
 
             </div>
+            </div>
         </section>
-
-
+        </div>
     </main>
+
+<!-- Footer -->
+<div class="background-gradient">
     <footer class="footer" id="contacts">
+        <div class="wrap">
         <div class="footer-content">
             <div class="contacts">
                 <h2 class="title-footer">For questions and suggestions</h2>
@@ -186,6 +219,7 @@
                 </div>
             </div>
             <img class="footer-puppy" src="footer-puppy.png" alt="Puppy"/>
+        </div>
         </div>
     </footer>
 </div>
