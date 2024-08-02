@@ -643,20 +643,18 @@ header .logo-subtitle {
     gap: 100px;
 }
 .footer-content {
+    flex-basis: auto;
     display: flex;
     padding-top: 26px;
     gap: 122px;
 }
-
 .contacts {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-start;
-    width: 278px;
-    height: 234px;
-    margin-top: 16px;
-    margin-right: 160px;
+    gap: 40px;
+    font-size: 20px;
+    line-height: 115%;
+    letter-spacing: 0.06em;
 }
 .mail {
     display: flex;
@@ -692,24 +690,20 @@ header .logo-subtitle {
     text-decoration: none;
 }
 .title-footer {
+    color: #fff;
+    font-weight: 400;
     font-size: 35px;
-    font-weight: 100;
-    font-family: Georgia, Regular, sans-serif;
-    letter-spacing: 2px;
-    line-height: 44px;
-    color: white;
-    margin: 0;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+    max-width: 300px;
 }
 
 .locations {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    width: 302px;
-    height: 234px;
-    padding: 0;
-    margin-top: 16px;
-    margin-right: 160px;
+    justify-content: flex-start;
+    gap: 32px;
+    padding-left: 17px;
 }
 .Boston {
     display: flex;
@@ -728,7 +722,7 @@ header .logo-subtitle {
     align-items: center;
 }
 
-.footer .footer-puppy {
+.footer-puppy {
     flex-shrink: 0;
     padding-top: 10px;
     padding-left: 60px;
