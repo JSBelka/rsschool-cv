@@ -9,83 +9,11 @@ html {
     padding: 0;
     margin: 0;
 }
-
-@media screen and (max-width: 768px) {
-    .StartScreen {
-        padding: 30px 30px 0;
-        max-height: 1165px;
-    }
-    .startScreenContent {
-        padding-top: 31px;
-        flex-direction: column;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: flex-end;
-        gap: 100px;
-    }
-    .content {
-        align-self: center;
-        padding: 0;
-    }
-    .nav {
-            display: none;
-    }
-    .header-burger {
-        margin-right: 10px;
-        position: relative;
-        width: 30px;
-        height: 25px;
-    }
-    .burger-menu {
-        display: block;
-        position: absolute;
-        width: 30px;
-        height: 3px;
-        background-color: #f1cdb3;
-        top: 50%;
-        left: 0;
-        transition: all 0.3s ease;
-    }
-    .burger-menu:before,
-    .burger-menu:after {
-        content: " ";
-        width: 30px;
-        height: 3px;
-        background-color: inherit;
-        position: absolute;
-    }
-    .burger-menu:after {
-        top: -10px;
-    }
-    .burger-menu:before {
-        top: 10px;
-    }
-    .About {
-        flex-direction: column-reverse;
-        align-items: center;
-        gap: 72px;
-        padding-top: 37px;
-    }
-    .About .about-text {
-        padding-left: 0;
-        max-width: 430px;
-    }
-    .About .about-img {
-        padding-right: 0;
-    }
-    .Donation {
-        flex-direction: column-reverse;
-        align-items: center;
-        padding: 60px 0 99px;
-    }
-}
-
 picture {
     display: block;
     width: 100%;
     max-width: 100%;
 }
-
 body {
     font-family: Georgia, Regular, sans-serif;
     font-size: 15px;
@@ -119,22 +47,21 @@ img {
 .header-burger {
     display: none;
 }
-
 .logo {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     height: 60px;
 }
-header .logo-title {
+.logo-title {
     display: block;
     margin-bottom: 8px;
     color: #f1cdb3;
     line-height: 110%;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
     font-size: 32px;
 }
-header .logo-subtitle {
+.logo-subtitle {
     color: #cdcdcd;
     font-family: Arial, Regular, sans-serif;
     line-height: 15px;
@@ -718,3 +645,70 @@ header .logo-subtitle {
     padding-left: 60px;
 }
 
+@media screen and (max-width: 768px) {
+    .wrap {
+        padding: 30px 30px 0;
+    }
+    .startScreenContent {
+        padding-top: 30px;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: flex-end;
+        gap: 100px;
+    }
+    .content {
+        align-self: center;
+        padding: 0;
+    }
+    .button-primary {
+        align-self: center;
+    }
+    .About {
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 72px;
+        padding-top: 37px;
+    }
+    .About .about-text {
+        padding-left: 0;
+        max-width: 430px;
+    }
+    .About .about-img {
+        padding-right: 0;
+    }
+    .Donation {
+        flex-direction: column-reverse;
+        align-items: center;
+        padding: 60px 0 99px;
+    }
+}
+@media screen and (max-width: 767px) {
+    .nav {
+        display: none;
+    }
+}
+@media screen and (max-width: 420px) {
+    .wrap {
+        padding: 30px 10px 0;
+    }
+}
+@media screen and (max-width: 320px) {
+    .header-burger {
+        margin-right: 10px;
+        position: relative;
+        width: 30px;
+        height: 25px;
+    }
+    .burger-menu {
+        display: block;
+        position: absolute;
+        width: 30px;
+        height: 3px;
+        background-color: #f1cdb3;
+        top: 50%;
+        left: 0;
+        transition: all 0.3s ease;
+        border-bottom: 3px solid rgb(241 205 179);
+    }
+}
