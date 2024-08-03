@@ -347,29 +347,18 @@ img {
 }
 .Help {
     display: flex;
-    height: 611px;
-    padding: 0;
-}
-.help-content {
-    margin: 80px 40px 0 40px;
-    height: 431px;
-    width: 1200px;
-    display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    padding: 49px 0 101px;
 }
 .heading-help {
-    color: rgba(84, 84, 84, 1);
-    font-size: 34px;
-    font-weight: 100;
-    font-family: Georgia, Regular, sans-serif;
+    font-size: 35px;
+    font-weight: 200;
+    line-height: 130%;
     letter-spacing: 2px;
-    line-height: 45px;
-    width: 308px;
-    height: 90px;
     text-align: center;
-    margin: 0;
+    padding-bottom: 59px;
+    padding-left: 2px;
 }
 .help-grid {
     width: 1026px;
