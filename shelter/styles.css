@@ -446,8 +446,6 @@ img {
 }
 .footer {
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
     gap: 100px;
     padding-top: 10px;
     padding-left: 60px;
@@ -504,12 +502,10 @@ img {
 .locations a {
     color: #f1cdb3;
     display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
     align-items: center;
     gap: 20px;
     font-style: normal;
-    font-size: 2rem;
+    font-size: 18px;
     line-height: 115%;
     letter-spacing: 0.06em;
 }
