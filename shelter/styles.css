@@ -446,9 +446,11 @@ img {
 }
 .footer {
     display: flex;
+    flex-basis: auto;
+    justify-content: center;
+    flex-wrap: wrap;
     gap: 100px;
-    padding-top: 10px;
-    padding-left: 60px;
+    color: #f1cdb3;
 }
 .footer-content {
     flex-basis: auto;
