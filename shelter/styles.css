@@ -669,12 +669,15 @@ img {
         align-items: center;
         gap: 72px;
         padding-top: 37px;
+        padding-left: 0;
+        padding-right: 0;
+        max-width: 430px;
     }
-    .About .about-text {
+    .about-text {
         padding-left: 0;
         max-width: 430px;
     }
-    .About .about-img {
+    .about-img {
         padding-right: 0;
     }
     .Donation {
@@ -687,28 +690,59 @@ img {
     .nav {
         display: none;
     }
+    .header-burger {
+        margin-top: 19px;
+        position: relative;
+        width: 30px;
+        height: 25px;
+    }
+    .burger-line {
+        position: absolute;
+        width: 200px;
+        border-bottom: 3px solid rgb(241 205 179);
+    }
 }
 @media screen and (max-width: 420px) {
     .wrap {
         padding: 30px 10px 0;
     }
+    .startScreenContent {
+        gap: 105px;
+    }
+    .content {
+        text-align: center;
+        align-items: center;
+        max-width: 300px;
+        padding-left: 0;
+    }
+    .h1 {
+        max-width: 250px;
+        font-size: 25px;
+        letter-spacing: 1px;
+    }
+    .About {
+        padding: 42px 10px;
+        gap: 42px;
+        align-items: center;
+        max-width: 300px;
+    }
+    .about-text {
+        text-align: center;
+        padding-top: 0;
+    }
+    .about-title {
+        font-size: 25px;
+        padding-top: 0;
+        padding-right: 0;
+    }
+    .about-paragraph {
+        padding: 0 15px 5px;
+        text-align: justify;
+    }
 }
 @media screen and (max-width: 320px) {
-    .header-burger {
-        margin-right: 10px;
-        position: relative;
-        width: 30px;
-        height: 25px;
+    .header {
+        padding-left: 10px;
     }
-    .burger-menu {
-        display: block;
-        position: absolute;
-        width: 30px;
-        height: 3px;
-        background-color: #f1cdb3;
-        top: 50%;
-        left: 0;
-        transition: all 0.3s ease;
-        border-bottom: 3px solid rgb(241 205 179);
-    }
+
 }
