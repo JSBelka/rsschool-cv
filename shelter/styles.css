@@ -361,103 +361,22 @@ img {
     padding-left: 2px;
 }
 .help-grid {
-    width: 1026px;
-    height: 281px;
-    margin-bottom: 0;
     display: flex;
-    flex-direction: row;
+    justify-content: center;
     flex-wrap: wrap;
+    row-gap: 55px;
+    column-gap: 120px;
+}
+.help-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
 }
 .help-text {
-    color: rgba(84, 84, 84, 1);
-    font-family: Georgia, Regular, sans-serif;
-    letter-spacing: 1px;
     font-size: 20px;
-    margin-top: 27px;
-}
-.pet-food {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    width: 82px;
-    height: 113px;
-}
-.transportation {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    width: 150px;
-    height: 113px;
-    margin-left: 120px;
-}
-.toys {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    width: 60px;
-    height: 113px;
-    margin-left: 120px;
-}
-.bowls {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    width: 153px;
-    height: 113px;
-    margin-left: 120px;
-}
-.shampoos {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    width: 101px;
-    height: 113px;
-    margin-left: 120px;
-}
-.vitamins {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    width: 89px;
-    height: 113px;
-    margin-left: 84px;
-    margin-top: 55px;
-}
-.medicines {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    width: 101px;
-    height: 113px;
-    margin-left: 120px;
-    margin-top: 55px;
-}
-.collars {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    width: 165px;
-    height: 113px;
-    margin-left: 120px;
-    margin-top: 55px;
-}
-.sleeping {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    width: 143px;
-    height: 113px;
-    margin-left: 120px;
-    margin-top: 55px;
+    line-height: 115%;
+    letter-spacing: 0.06em;
 }
 .help-img {
     width: 60px;
@@ -525,59 +444,19 @@ img {
     line-height: 18px;
     color: #b2b2b2;
 }
-
 .footer {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     gap: 100px;
+    padding-top: 10px;
+    padding-left: 60px;
 }
 .footer-content {
     flex-basis: auto;
     display: flex;
     padding-top: 26px;
     gap: 122px;
-}
-.contacts {
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-    font-size: 20px;
-    line-height: 115%;
-    letter-spacing: 0.06em;
-}
-.mail {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    width: 251px;
-    height: 32px;
-}
-.phone {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    width: 239px;
-    height: 32px;
-}
-.contacts-text {
-    color: rgba(241, 205, 179, 1);
-    font-family: "Georgia", sans-serif;
-    font-size: 22px;
-    line-height: 23px;
-}
-.contacts-text-locations {
-    color: rgba(241, 205, 179, 1);
-    font-family: "Georgia", sans-serif;
-    font-size: 22px;
-    line-height: 23px;
-    text-decoration: none;
-    margin-left: 20px;
-}
-.contacts-text-locations a {
-    text-decoration: none;
 }
 .title-footer {
     color: #fff;
@@ -587,7 +466,34 @@ img {
     letter-spacing: 0.06em;
     max-width: 300px;
 }
-
+.contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    font-size: 20px;
+    line-height: 115%;
+    letter-spacing: 0.06em;
+}
+.contacts a {
+    color: #f1cdb3;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.icon-mail {
+    background-image: url("icon-email.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 40px;
+    height: 32px;
+}
+.icon-phone {
+    background-image: url("icon-phone.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 40px;
+    height: 32px;
+}
 .locations {
     display: flex;
     flex-direction: column;
@@ -595,25 +501,27 @@ img {
     gap: 32px;
     padding-left: 17px;
 }
-.Boston {
+.locations a {
+    color: #f1cdb3;
     display: flex;
-    flex-direction: row;
-    width: 302px;
-    height: 46px;
-    font-size: 17px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    gap: 20px;
+    font-style: normal;
+    font-size: 2rem;
+    line-height: 115%;
+    letter-spacing: 0.06em;
 }
-.London {
-    display: flex;
-    flex-direction: row;
-    width: 302px;
-    height: 32px;
-    font-size: 17px;
-    align-items: center;
-}
-
-.footer-puppy {
+.icon-address {
+    background-image: url(icon-marker.svg);
     flex-shrink: 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 22px;
+    height: 32px;
+}
+.footer-puppy {
     padding-top: 10px;
     padding-left: 60px;
 }
