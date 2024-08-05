@@ -206,13 +206,17 @@ img {
 }
 .about-paragraph {
     color: rgba(76, 76, 76, 1);
-    width: 430px;
+    max-width: 430px;
     height: 279px;
     font-family: Arial, Regular, sans-serif;
     font-size: 15px;
     line-height: 24px;
     padding: 2px 0;
     margin: 0;
+}
+.about-paragraph p {
+    line-height: 160%;
+    padding-bottom: 8px;
 }
 .background-friends {
     background-color: #f6f6f6;
@@ -550,6 +554,7 @@ img {
         align-self: center;
     }
     .About {
+        display: flex;
         flex-direction: column-reverse;
         align-items: center;
         gap: 72px;
@@ -687,10 +692,9 @@ img {
         letter-spacing: 1px;
     }
     .About {
-        padding: 42px 10px;
-        gap: 42px;
-        align-items: center;
-        max-width: 300px;
+        padding-top: 12px;
+        padding-bottom: 43px;
+        gap: 35px;
     }
     .about-text {
         text-align: center;
