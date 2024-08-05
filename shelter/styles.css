@@ -417,6 +417,7 @@ img {
     font-size: 20px;
     line-height: 115%;
     letter-spacing: 0.06em;
+    max-width: 349px;
 }
 .credit-card-img {
     width: 30px;
@@ -702,6 +703,34 @@ img {
     }
     .about-paragraph {
         padding: 0 15px 5px;
+        text-align: justify;
+    }
+    .Donation {
+        padding-top: 13px;
+        padding-bottom: 42px;
+        gap: 10px;
+    }
+    .Donation .donation-text {
+        padding-left: 9px;
+        padding-right: 9px;
+        gap: 22px;
+    }
+    .Donation .donation-text .heading-donation {
+        font-size: 25px;
+        text-align: center;
+    }
+    .Donation .donation-text .credit-card {
+        font-size: 15px;
+    }
+    .Donation .donation-text .donation-bank-name {
+        white-space: nowrap;
+        font-size: 15px;
+        letter-spacing: normal;
+        text-align: center;
+    }
+    .Donation .donation-text .legal-info {
+        font-size: 12px;
+        line-height: 18px;
         text-align: justify;
     }
 
