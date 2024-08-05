@@ -44,9 +44,6 @@ img {
     padding-bottom: 30px;
     align-items: center;
 }
-.header-burger {
-    display: none;
-}
 .logo {
     display: flex;
     flex-direction: column;
@@ -523,7 +520,11 @@ img {
     padding-top: 10px;
     padding-left: 60px;
 }
-
+@media screen and (max-width: 1280px) {
+.header-burger {
+    display: none;
+}
+}
 @media screen and (max-width: 768px) {
     .wrap {
         padding: 30px 30px 0;
@@ -570,20 +571,44 @@ img {
         display: none;
     }
     .header-burger {
-        margin-top: 19px;
+        display: block;
+        margin-right: 10px;
         position: relative;
+        z-index: 100;
         width: 30px;
         height: 25px;
-    }
-    .burger-line {
+      }
+      .burger-menu {
+        display: block;
         position: absolute;
-        width: 200px;
-        border-bottom: 3px solid rgb(241 205 179);
-    }
+        width: 30px;
+        height: 3px;
+        background-color: #f1cdb3;
+        top: 50%;
+        left: 0;
+        transition: all 0.3s ease;
+      }
+      .burger-menu:before,
+      .burger-menu:after {
+        content: " ";
+        width: 30px;
+        height: 3px;
+        background-color: inherit;
+        position: absolute;
+      }
+      .burger-menu:after {
+        top: -10px;
+      }
+      .burger-menu:before {
+        top: 10px;
+      }
 }
 @media screen and (max-width: 420px) {
     .wrap {
         padding: 30px 10px 0;
+    }
+    .header {
+        padding: 0 10px 30px 10px;
     }
     .startScreenContent {
         gap: 105px;
