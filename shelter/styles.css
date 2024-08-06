@@ -267,17 +267,20 @@ img {
 .button-arrow:hover {
     background-color: #fddcc4;
 }
+.ico {
+    display: inline-block;
+    cursor: pointer;
+    color: #292929;
+}
 .arrow-1 {
     background-image: url(Arrow_right.png);
     background-position: center;
-    display: inline-block;
     cursor: pointer;
     color: #292929;
 }
 .arrow-2 {
     background-image: url(Arrow_left.png);
     background-position: center;
-    display: inline-block;
     cursor: pointer;
     color: #292929;
 }
