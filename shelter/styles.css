@@ -633,6 +633,12 @@ img {
         align-items: center;
         padding: 60px 0 99px;
     }
+    .donation-image {
+        padding-top: 30px;
+    }
+    .donation-text {
+        max-width: 380px;
+    }
     .footer {
         justify-content: center;
         gap: 54px;
