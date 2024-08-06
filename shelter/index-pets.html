@@ -8,23 +8,35 @@
     <link rel="stylesheet" href="styles-pets.css">
     <title>Our Pets</title>
 </head>
-<body class="body">
-<div class="pets-site">
+
+<body>
+<!-- Header -->
+<div class="wrap">
     <header class="header">
-        <div class="logo">
-            <p class="title"><a class="nav-link" href="index.html">Cozy House</a></p>
-            <p class="subtitle">Shelter for pets in Boston</p>
-        </div>
+        <a href="index.html" class="logo">
+            <span class="logo-title">Cozy House</span>
+            <span class="logo-subtitle">Shelter for pets in Boston</span>
+        </a>
+        <nav class="nav">
         <ul class="nav-list">
             <li class="nav-item"><a class="nav-link" href="index.html">About the shelter</a></li>
             <li class="nav-item-our-pets">Our pets</li>
             <li class="nav-item"><a class="nav-link" href="index.html#help">Help the shelter</a></li>
             <li class="nav-item"><a class="nav-link" href="#contacts">Contacts</a></li>
         </ul>
+        </nav>
+        <div class="header-burger">
+            <span class="burger-menu"></span>
+        </div>
     </header>
+</div>
+
+    <!-- Main -->
 <main>
-    <div class="Pets">
-        <div class="petsContent">
+    <!-- Pets -->
+    <div class="background-pets">
+        <div class="wrap">
+            <section class="pets">
         <h1 class="h1">Our friends who<br>
             are looking for a house</h1>
             <div class="cards-container">
@@ -102,40 +114,41 @@
                     <a class="button-arrow-3-link"><img class="arrow" src="grey2.png" alt="white-arrow-2"></a>
                 </div>
             </div>
+            </section>
         </div>
     </div>
 </main>
-    <footer class="footer" id="contacts">
-        <div class="footer-content">
-            <div class="contacts">
-                <h2 class="title-footer">For questions and suggestions</h2>
-                <div class="mail">
-                    <a class="nav-link" href="mailto:barbi-bar@mail.ru"><img src="icon-email.svg" alt="mail" width="40" height="32"/></a>
-                    <p class="contacts-text">email@shelter.com</p>
-                </div>
-                <div class="phone">
-                    <a class="nav-link" href="tel:+491570156"><img src="icon-phone.svg" alt="phone" width="40" height="32"/></a>
-                    <p class="contacts-text">+13 674 567 75 54</p>
-                </div>
+
+    <!-- Footer -->
+<div class="background-gradient">
+    <div class="wrap">
+        <footer class="footer" id="contacts">
+            <div class="footer-content">
+                <section class="contacts">
+                    <h2 class="title-footer">For questions and suggestions</h2>
+                    <a href="mailto:email@shelter.com"><span class="icon-mail"></span>email@shelter.com</a>
+                    <a href="tel:+136745677554"><span class="icon-phone"></span>+13 674 567 75 54</a>
+                </section>
+                <section class="locations">
+                    <h2 class="title-footer">We are waiting for your visit</h2>
+                    <address><a href="https://maps.app.goo.gl/bzZEwpG1bhqZinYe6" target="_blank"><span
+                            class="icon-address"></span><span>1 Central Street, Boston<br>(entrance from the
+                  store)</span></a>
+                    </address>
+                    <address><a href="https://maps.app.goo.gl/7bGjCJEhW5xRyTB76" target="_blank"><span
+                            class="icon-address"></span><span>18 South Park, London</span></a>
+                    </address>
+                </section>
             </div>
-            <div class="locations">
-                <h2 class="title-footer">We are waiting for your visit</h2>
-                <div class="Boston">
-                    <a class="nav-link"
-                       href="https://www.google.com/maps/place/%D0%91%D0%BE%D1%81%D1%82%D0%BE%D0%BD,+%D0%9C%D0%B0%D1%81%D1%81%D0%B0%D1%87%D1%83%D1%81%D0%B5%D1%82%D1%81,+%D0%A1%D0%A8%D0%90/@42.314232,-71.1350927,11z/data=!3m1!4b1!4m6!3m5!1s0x89e3652d0d3d311b:0x787cbf240162e8a0!8m2!3d42.3600825!4d-71.0588801!16zL20vMDFjeF8?entry=ttu">
-                        <img src="icon-marker.svg" alt="location" width="22" height="32"/></a>
-                    <p class="contacts-text-locations">1 Central Street, Boston (entrance from the store)</p>
-                </div>
-                <div class="London">
-                    <a class="nav-link"
-                       href="https://www.google.com/maps/place/%D0%9B%D0%BE%D0%BD%D0%B4%D0%BE%D0%BD,+%D0%92%D0%B5%D0%BB%D0%B8%D0%BA%D0%BE%D0%B1%D1%80%D0%B8%D1%82%D0%B0%D0%BD%D0%B8%D1%8F/@51.5285262,-0.266405,11z/data=!3m1!4b1!4m6!3m5!1s0x47d8a00baf21de75:0x52963a5addd52a99!8m2!3d51.5072178!4d-0.1275862!16zL20vMDRqcGw?entry=ttu">
-                        <img src="icon-marker.svg" alt="location" width="22" height="32"/></a>
-                    <p class="contacts-text-locations">18 South Park, London</p>
-                </div>
+            <div class="footer-puppy">
+                <picture>
+                    <source srcset="footer-puppy320.png" media="(max-width: 320px)">
+                    <img src="footer-puppy.png" alt="Puppy"/>
+                </picture>
             </div>
-            <img class="footer-puppy" src="footer-puppy.png" alt="Puppy"/>
-        </div>
-    </footer>
+        </footer>
+    </div>
 </div>
+
 </body>
 </html>
