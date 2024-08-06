@@ -114,113 +114,75 @@ img {
 .background-pets {
     background-color: #f6f6f6;
 }
-.petsContent {
-    height: 1162px;
-    margin: 80px 40px 100px 40px;
+.pets {
+    padding-bottom: 99px;
+    padding-top: 50px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
 }
 .h1 {
     font-family: Georgia, Regular, sans-serif;
-    font-weight: 100;
+    padding-bottom: 58px;
+    letter-spacing: 0.06em;
+    font-weight: 400;
     font-size: 35px;
-    letter-spacing: 2px;
-    line-height: 48px;
-    color: rgba(84, 84, 84, 1);
-    width: 400px;
-    height: 90px;
-    margin: 0;
+    line-height: 130%;
     text-align: center;
 }
 .cards-container {
-    width: 1200px;
-    height: 930px;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
+    column-gap: 39px;
+    row-gap: 28px;
 }
-.card-1 {
+.card {
+    background-color: #fafafa;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    width: 270px;
+    flex-shrink: 0;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     align-items: center;
-    width: 270px;
-    height: 435px;
-    background: white;
-    border-radius: 15px;
-    margin-top: 15px;
-}
-.card-2 {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    width: 270px;
-    height: 435px;
-    background: white;
-    border-radius: 15px;
-    margin-top: 30px;
+    gap: 30px;
+    padding-bottom: 30px;
+    transition: 0.3s background-color ease;
 }
 .pets-name {
-    font-size: 18px;
-    font-family: Georgia, Regular, sans-serif;
-    color: rgba(84, 84, 84, 1);
-    letter-spacing: 2px;
-}
-.pets-name-2 {
-    font-size: 18px;
-    height: 30px;
-    font-family: Georgia, Regular, sans-serif;
-    color: rgba(84, 84, 84, 1);
-    letter-spacing: 2px;
-}
-.button-pets-card {
-    color: rgba(41, 41, 41, 1);
-    border: 2px solid rgba(241, 205, 179, 1);
-    width: 188px;
-    height: 48px;
-    border-radius: 40px;
-    margin-bottom: 30px;
-    cursor: pointer;
-    transition: 0.3s;
-}
-.button-pets-card-2 {
-    color: rgba(41, 41, 41, 1);
-    border: 2px solid rgba(241, 205, 179, 1);
-    width: 188px;
-    height: 48px;
-    border-radius: 40px;
-    margin-bottom: 35px;
-    cursor: pointer;
-    transition: 0.3s;
-}
-.button-pets-card:hover {
-    background: rgba(253, 220, 196, 1);
-    border: none;
-}
-.button-pets-card-2:hover {
-    background: rgba(253, 220, 196, 1);
-    border: none;
-}
-.button-pets-card-item {
-    text-align: center;
-    margin: 15px 45px;
-}
-.button-pets-card-item a {
     font-size: 19px;
+    line-height: 23px;
+    letter-spacing: 0.06em;
+    font-weight: 300;
+}
+
+.button {
+    display: block;
     font-family: Georgia, Regular, sans-serif;
-    color: rgba(41, 41, 41, 1);
-    text-decoration: none;
+    font-size: 17px;
+    color: #292929;
+    background-color: #f1cdb3;
+    border: none;
+    border-radius: 50px;
+    padding: 16px 45px 14px;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+.button a {
+    display: block;
+    color: #292929;
+}
+.button:hover {
+    background-color: #fddcc4;
 }
 .navigation {
-    width: 340px;
-    height: 52px;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    gap: 20px;
+    align-self: center;
+    padding-top: 59px;
 }
 .button-arrow-1 {
     width: 52px;
