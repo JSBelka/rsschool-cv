@@ -583,18 +583,22 @@ img {
         align-self: center;
         padding: 0;
     }
+    .h1 {
+        padding-left: 5px;
+    }
+    .paragraph {
+        padding-left: 5px;
+    }
     .button-primary {
         align-self: center;
     }
     .About {
-        display: flex;
         flex-direction: column-reverse;
         align-items: center;
         gap: 72px;
         padding-top: 37px;
         padding-left: 0;
         padding-right: 0;
-        max-width: 430px;
     }
     .about-text {
         padding-left: 0;
@@ -602,6 +606,27 @@ img {
     }
     .about-img {
         padding-right: 0;
+    }
+    .help {
+        padding-top: 50px;
+    }
+    .heading-help {
+        padding-bottom: 59px;
+    }
+    .help-grid {
+        max-width: 630px;
+        gap: 0;
+        justify-content: space-between;
+        row-gap: 55px;
+    }
+    .help-item {
+        width: 170px;
+        min-height: 87px;
+    }
+    .icon-title {
+        font-size: 2rem;
+        line-height: 115%;
+        letter-spacing: 0.06em;
     }
     .Donation {
         flex-direction: column-reverse;
@@ -690,27 +715,7 @@ img {
     .button-slider-mobile .button-slider {
         display: block;
     }
-    .help {
-        padding-top: 50px;
-    }
-    .help .heading-help {
-        padding-bottom: 59px;
-    }
-    .help-grid {
-        max-width: 630px;
-        gap: 0;
-        justify-content: space-between;
-        row-gap: 55px;
-    }
-    .help-grid .help-item {
-        width: 170px;
-        min-height: 87px;
-    }
-    .help-grid .icon-title {
-        font-size: 2rem;
-        line-height: 115%;
-        letter-spacing: 0.06em;
-    }
+
     .footer {
         justify-content: center;
         gap: 54px;
