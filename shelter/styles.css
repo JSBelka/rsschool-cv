@@ -44,6 +44,9 @@ img {
     padding-bottom: 30px;
     align-items: center;
 }
+.header-burger {
+    display: none;
+}
 .logo {
     display: flex;
     flex-direction: column;
@@ -206,13 +209,17 @@ img {
 }
 .about-paragraph {
     color: rgba(76, 76, 76, 1);
-    width: 430px;
+    max-width: 430px;
     height: 279px;
     font-family: Arial, Regular, sans-serif;
     font-size: 15px;
     line-height: 24px;
     padding: 2px 0;
     margin: 0;
+}
+.about-paragraph p {
+    line-height: 160%;
+    padding-bottom: 8px;
 }
 .background-friends {
     background-color: #f6f6f6;
@@ -263,10 +270,16 @@ img {
 .arrow-1 {
     background-image: url(Arrow_right.png);
     background-position: center;
+    display: inline-block;
+    cursor: pointer;
+    color: #292929;
 }
 .arrow-2 {
     background-image: url(Arrow_left.png);
     background-position: center;
+    display: inline-block;
+    cursor: pointer;
+    color: #292929;
 }
 .slider {
     display: flex;
@@ -341,6 +354,11 @@ img {
 }
 .nav-link-pets {
     text-decoration: none;
+}
+.button-slider-mobile {
+    display: none;
+    width: auto;
+    height: auto;
 }
 .Help {
     display: flex;
@@ -417,6 +435,7 @@ img {
     font-size: 20px;
     line-height: 115%;
     letter-spacing: 0.06em;
+    max-width: 349px;
 }
 .credit-card-img {
     width: 30px;
@@ -443,9 +462,9 @@ img {
 }
 .footer {
     display: flex;
-    flex-basis: auto;
     justify-content: center;
     flex-wrap: wrap;
+    flex-shrink: 0;
     gap: 100px;
     color: #f1cdb3;
 }
@@ -504,7 +523,7 @@ img {
     align-items: center;
     gap: 20px;
     font-style: normal;
-    font-size: 18px;
+    font-size: 20px;
     line-height: 115%;
     letter-spacing: 0.06em;
 }
@@ -517,15 +536,38 @@ img {
     height: 32px;
 }
 .footer-puppy {
+    flex-shrink: 0;
     padding-top: 10px;
     padding-left: 60px;
 }
 @media screen and (max-width: 1280px) {
-.header-burger {
-    display: none;
+    .header {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 30px;
+        align-items: center;
+    }
 }
+@media screen and (max-width: 1265px) {
+    .pets {
+        padding-top: 50px;
+    }
+    .slider {
+        gap: 0;
+    }
+    .slider .cards-pets {
+        max-width: 600px;
+        overflow: hidden;
+        gap: 40px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 58px;
+    }
+    .header-burger {
+        display: none;
+    }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 769px) {
     .wrap {
         padding: 30px 30px 0;
     }
@@ -541,6 +583,12 @@ img {
         align-self: center;
         padding: 0;
     }
+    .h1 {
+        padding-left: 5px;
+    }
+    .paragraph {
+        padding-left: 5px;
+    }
     .button-primary {
         align-self: center;
     }
@@ -551,7 +599,6 @@ img {
         padding-top: 37px;
         padding-left: 0;
         padding-right: 0;
-        max-width: 430px;
     }
     .about-text {
         padding-left: 0;
@@ -560,10 +607,57 @@ img {
     .about-img {
         padding-right: 0;
     }
+    .help {
+        padding-top: 50px;
+    }
+    .heading-help {
+        padding-bottom: 59px;
+    }
+    .help-grid {
+        max-width: 630px;
+        gap: 0;
+        justify-content: space-between;
+        row-gap: 55px;
+    }
+    .help-item {
+        width: 170px;
+        min-height: 87px;
+    }
+    .icon-title {
+        font-size: 2rem;
+        line-height: 115%;
+        letter-spacing: 0.06em;
+    }
     .Donation {
         flex-direction: column-reverse;
         align-items: center;
         padding: 60px 0 99px;
+    }
+    .donation-image {
+        padding-top: 30px;
+    }
+    .donation-text {
+        max-width: 380px;
+    }
+    .footer {
+        justify-content: center;
+        gap: 54px;
+    }
+    .footer-content {
+        padding-top: 0;
+        padding-left: 34px;
+        gap: 22px;
+        flex-basis: 100%;
+    }
+    .contacts {
+        gap: 40px;
+    }
+    .locations {
+        display: flex;
+        gap: 32px;
+    }
+    .footer-puppy {
+        padding-left: 0;
     }
 }
 @media screen and (max-width: 767px) {
@@ -578,7 +672,7 @@ img {
         width: 30px;
         height: 25px;
       }
-      .burger-menu {
+    .burger-menu {
         display: block;
         position: absolute;
         width: 30px;
@@ -588,20 +682,83 @@ img {
         left: 0;
         transition: all 0.3s ease;
       }
-      .burger-menu:before,
-      .burger-menu:after {
+    .burger-menu:before,
+    .burger-menu:after {
         content: " ";
         width: 30px;
         height: 3px;
         background-color: inherit;
         position: absolute;
       }
-      .burger-menu:after {
+    .burger-menu:after {
         top: -10px;
       }
-      .burger-menu:before {
+    .burger-menu:before {
         top: 10px;
       }
+    .pets {
+        padding-top: 12px;
+        padding-bottom: 44px;
+    }
+    .pets .heading-pets {
+        font-size: 25px;
+    }
+    .slider {
+        flex-direction: column;
+    }
+    .slider .cards-pets {
+        max-width: 270px;
+        padding: 41px 0 20px;
+    }
+    .slider .button-arrow {
+        display: none;
+    }
+    .button-slider-mobile {
+        display: flex;
+        gap: 80px;
+        padding-bottom: 42px;
+    }
+    .button-slider-mobile .button-slider {
+        display: block;
+    }
+
+    .footer {
+        justify-content: center;
+        gap: 54px;
+    }
+}
+@media screen and (max-width: 630px) {
+    .footer {
+        gap: 30px;
+    }
+    .title-footer {
+        max-width: 250px;
+        font-size: 25px;
+        text-align: center;
+    }
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+        gap: 41px;
+        padding-left: 0;
+    }
+    .contacts {
+        align-items: center;
+        gap: 39px;
+    }
+    .locations {
+        display: flex;
+        padding-left: 0;
+        gap: 39px;
+        align-items: center;
+    }
+    .footer-puppy {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .footer .address .footer-title {
+        align-self: center;
+    }
 }
 @media screen and (max-width: 420px) {
     .wrap {
@@ -625,10 +782,9 @@ img {
         letter-spacing: 1px;
     }
     .About {
-        padding: 42px 10px;
-        gap: 42px;
-        align-items: center;
-        max-width: 300px;
+        padding-top: 12px;
+        padding-bottom: 43px;
+        gap: 35px;
     }
     .about-text {
         text-align: center;
@@ -643,10 +799,66 @@ img {
         padding: 0 15px 5px;
         text-align: justify;
     }
+    .Donation {
+        padding-top: 13px;
+        padding-bottom: 42px;
+        gap: 10px;
+    }
+    .Donation .donation-text {
+        padding-left: 9px;
+        padding-right: 9px;
+        gap: 22px;
+    }
+    .Donation .donation-text .heading-donation {
+        font-size: 25px;
+        text-align: center;
+    }
+    .Donation .donation-text .credit-card {
+        font-size: 15px;
+    }
+    .Donation .donation-text .donation-bank-name {
+        white-space: nowrap;
+        font-size: 15px;
+        letter-spacing: normal;
+        text-align: center;
+    }
+    .Donation .donation-text .legal-info {
+        font-size: 12px;
+        line-height: 18px;
+        text-align: justify;
+    }
+    .help {
+        padding-top: 12px;
+        padding-bottom: 42px;
+    }
+    .heading-help {
+        font-size: 25px;
+        padding-bottom: 41px;
+    }
+    .help-grid {
+        row-gap: 30px;
+        justify-content: flex-start;
+        column-gap: 30px;
+        padding-left: 5px;
+    }
+    .help-item {
+        width: 130px;
+        height: 87px;
+        gap: 20px;
+    }
+    .help-img {
+        width: 50px;
+        height: 50px;
+    }
 }
 @media screen and (max-width: 320px) {
     .header {
         padding-left: 10px;
     }
-
+    .help-grid {
+        row-gap: 30px;
+        justify-content: center;
+        column-gap: 30px;
+        padding-left: 5px;
+    }
 }
