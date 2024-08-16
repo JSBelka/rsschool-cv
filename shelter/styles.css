@@ -335,6 +335,7 @@ img {
 }
 .pop-up {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100%;
@@ -352,16 +353,9 @@ img {
     visibility: visible;
     opacity: 1;
 }
-.pop-up-block {
-    width: 952px;
-    height: 552px;
-    display: flex;
-    flex-direction: column;
-    padding-left: 190px;
-    padding-top: 136px;
-}
 .pop-up-content {
     background-color: white;
+    border-radius: 10px;
     width: 900px;
     height: 500px;
     padding-left: 0;
@@ -369,14 +363,18 @@ img {
 }
 .pop-up-button {
     border-radius: 90%;
-    border: 1px solid rgba(241, 205, 179, 1);
+    border: 2px solid rgba(241, 205, 179, 1);
     width: 52px;
     height: 52px;
     background-color: transparent;
-    padding-right: 10px;
-    padding-top: 0;
+    font-size: 25px;
+    margin-right: 10px;
+    cursor: pointer;
 }
-
+.pop-up-button:hover {
+    background-color: rgba(253, 220, 196, 1);
+    border: none;
+}
 
 
 .slider .card:hover {
