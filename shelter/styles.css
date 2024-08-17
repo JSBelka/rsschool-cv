@@ -367,7 +367,9 @@ img {
 }
 .pop-up-content {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 29px;
     background-color: white;
     color: black;
     border-radius: 10px;
@@ -376,15 +378,27 @@ img {
     padding-left: 0;
     padding-bottom: 0;
     cursor: default;
-
 }
-
 .pop-up-button:hover {
     background-color: rgba(253, 220, 196, 1);
     border: none;
 }
+.Jennifer-modal {
+    width: 500px;
+    height: 500px;
+}
+.pop-up-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 351px;
+    height: 362px;
+    padding-top: 50px;
+}
+.pop-up-h1 {
+    font-size: 15px;
 
-
+}
 .slider .card:hover {
     background-color: #ffffff;
 }
