@@ -346,12 +346,14 @@ img {
     overflow: auto;
     top: 0;
     left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .pop-up-wrap {
     position: relative;
+    display: inline-block;
     background-color: transparent;
-    padding-left: 317px;
-    padding-top: 75px;
 }
 .pop-up-button {
     position: absolute;
@@ -362,8 +364,9 @@ img {
     background-color: transparent;
     font-size: 18px;
     cursor: pointer;
-    align-self: flex-end;
     transition: 0.3s ease;
+    left: 1200px;
+    top: 85px;
 }
 .pop-up-content {
     display: flex;
@@ -388,16 +391,37 @@ img {
     height: 500px;
 }
 .pop-up-text {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 351px;
-    height: 362px;
-    padding-top: 50px;
+    padding-top: 53px;
+    font-family: Georgia, Regular, sans-serif;
 }
 .pop-up-h1 {
+    font-size: 33px;
+    letter-spacing: 3px;
+    padding-bottom: 14px;
+}
+.pop-up-h3 {
+    font-size: 21px;
+    letter-spacing: 1px;
+    padding-bottom: 40px;
+}
+.pop-up-p {
+    padding-bottom: 40px;
+    letter-spacing: 1px;
     font-size: 15px;
-
+    line-height: 17px;
+}
+.pop-up-list {
+    font-size: 17px;
+    letter-spacing: 1px;
+    list-style-position: inside;
+    line-height: 27px;
+}
+.pop-li {
+    color: rgba(241, 205, 179, 1);
+    margin-left: -7px;
+}
+.li-text {
+    color: black;
 }
 .slider .card:hover {
     background-color: #ffffff;
