@@ -350,11 +350,6 @@ img {
     align-items: center;
     justify-content: center;
 }
-.pop-up-wrap {
-    position: relative;
-    display: inline-block;
-    background-color: transparent;
-}
 .pop-up-button {
     position: absolute;
     border-radius: 90%;
@@ -365,8 +360,6 @@ img {
     font-size: 18px;
     cursor: pointer;
     transition: 0.3s ease;
-    left: 1200px;
-    top: 85px;
 }
 .pop-up-content {
     display: flex;
@@ -788,6 +781,16 @@ img {
     .burger-menu:before {
         top: 10px;
       }
+    .nav__list{
+        flex-direction: column;
+        top: 230px;
+        gap: 41px;
+        padding-left: 8px;
+    }
+    .nav__link{
+        font-size: 32px;
+        line-height: 51px;
+    }
     .pets {
         padding-top: 12px;
         padding-bottom: 44px;
@@ -953,4 +956,31 @@ img {
         column-gap: 30px;
         padding-left: 5px;
     }
+}
+
+.active{
+    transform: translateX(0%);
+    transition: .5s linear;
+    opacity: 1;
+    visibility: visible;
+    z-index: 15;
+}
+.active-burger{
+    transform: rotate(90deg);
+    transition: .5s ease;
+}
+.stop{
+    overflow: hidden;
+}
+.dark:after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0);
+    opacity: 0.7;
+    transition: all 3s ease;
 }
