@@ -746,9 +746,6 @@ img {
     }
 }
 @media screen and (max-width: 767px) {
-    .nav {
-        display: none;
-    }
     .header-burger {
         display: block;
         margin-right: 10px;
@@ -757,6 +754,18 @@ img {
         width: 30px;
         height: 25px;
       }
+    .nav{
+        background-color: #292929;
+        min-width: 320px;
+        padding-bottom: 215px;
+        position: absolute;
+        right: 0;
+        top: -30px;
+        transform: translateX(100%);
+        visibility: hidden;
+        opacity: 0;
+        transition: 3s ease;
+    }
     .burger-menu {
         display: block;
         position: absolute;
@@ -766,6 +775,7 @@ img {
         top: 50%;
         left: 0;
         transition: all 0.3s ease;
+        cursor: pointer;
       }
     .burger-menu:before,
     .burger-menu:after {
@@ -774,6 +784,7 @@ img {
         height: 3px;
         background-color: inherit;
         position: absolute;
+        cursor: pointer;
       }
     .burger-menu:after {
         top: -10px;
@@ -781,13 +792,14 @@ img {
     .burger-menu:before {
         top: 10px;
       }
-    .nav__list{
+    .nav-list{
+        display: flex;
         flex-direction: column;
         top: 230px;
         gap: 41px;
         padding-left: 8px;
     }
-    .nav__link{
+    .nav-link{
         font-size: 32px;
         line-height: 51px;
     }
@@ -960,14 +972,14 @@ img {
 
 .active{
     transform: translateX(0%);
-    transition: .5s linear;
+    transition: 3s ease;
     opacity: 1;
     visibility: visible;
-    z-index: 15;
+    z-index: 10;
 }
 .active-burger{
     transform: rotate(90deg);
-    transition: .5s ease;
+    transition: 3s ease;
 }
 .stop{
     overflow: hidden;
