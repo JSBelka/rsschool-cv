@@ -990,7 +990,7 @@ img {
 }
 .active-burger{
     transform: rotate(90deg);
-    transition: 3s ease;
+    transition: 4s ease;
 }
 .stop{
     overflow: hidden;
