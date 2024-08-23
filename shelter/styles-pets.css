@@ -393,7 +393,7 @@ img {
     }
     .nav{
         background-color: white;
-        min-width: 320px;
+        width: 320px;
         position: absolute;
         right: 0;
         top: -30px;
@@ -434,8 +434,13 @@ img {
         align-items: center;
         top: 230px;
         gap: 37px;
+        width: auto;
     }
-    .nav-link{
+    .nav-item a {
+        font-size: 32px;
+        line-height: 51px;
+    }
+    .nav-item-our-pets {
         font-size: 32px;
         line-height: 51px;
     }
@@ -506,21 +511,21 @@ img {
     }
 }
 
-.active{
+.active {
     transform: translateX(0%);
     transition: 3s ease;
     opacity: 1;
     visibility: visible;
     z-index: 10;
 }
-.active-burger{
+.active-burger {
     transform: rotate(90deg);
     transition: 4s ease;
 }
-.stop{
+.stop {
     overflow: hidden;
 }
-.dark:after{
+.dark:after {
     content: '';
     position: absolute;
     top: 0;
