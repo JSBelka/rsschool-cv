@@ -1,16 +1,14 @@
+// Pop-up
 let card = document.getElementById('Jennifer');
-let popUp = document.querySelector('.pop-up');
+let popUp = document.getElementById('pop-up');
 let button = document.querySelector('.pop-up-button');
 
 card.addEventListener("click", function() {
     popUp.classList.toggle("hidden");
-    document.body.style.overflow = "hidden";
+    body.classList.toggle("stop");
 })
 
-button.addEventListener("click", function() {
-    popUp.classList.toggle("hidden");
-    document.body.style.overflow = "";
-})
+
 
 // Burger-menu
 let burger = document.querySelector('.header-burger');
