@@ -406,22 +406,25 @@ img {
 }
 .pop-up-p {
     padding-bottom: 40px;
-    letter-spacing: 1px;
+    letter-spacing: 0.9px;
     font-size: 15px;
     line-height: 17px;
+    padding-right: 17px;
 }
 .pop-up-list {
-    font-size: 17px;
-    letter-spacing: 1px;
     list-style-position: inside;
-    line-height: 27px;
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
 }
 .pop-li {
     color: rgba(241, 205, 179, 1);
-    margin-left: -7px;
 }
 .li-text {
     color: black;
+    margin-left: -4px;
+    font-family: Inter, sans-serif;
+    letter-spacing: 1px;
 }
 .slider .card:hover {
     background-color: #ffffff;
