@@ -262,6 +262,7 @@ img {
     width: 50px;
     height: 50px;
     transition: 0.3s background-color ease;
+    transform: translateY(-50%);
 }
 .button-arrow:hover {
     background-color: #fddcc4;
@@ -286,6 +287,7 @@ img {
     height: 30px;
 }
 .slider {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -294,8 +296,10 @@ img {
 .cards-pets {
     display: flex;
     overflow: hidden;
+    max-width: 990px;
     gap: 90px;
     padding: 60px 0;
+    transition: transform 0.3s ease;
 }
 .card {
     background-color: #fafafa;
@@ -1084,21 +1088,27 @@ img {
     }
 }
 
-.active{
+.active {
     transform: translateX(0%);
     transition: 3s ease;
     opacity: 1;
     visibility: visible;
     z-index: 10;
 }
-.active-burger{
+.active-burger {
     transform: rotate(90deg);
     transition: 4s ease;
 }
-.stop{
+.active-slider {
+    transform: translateX(100%);
+    transition: 3s ease;
+    opacity: 1;
+    visibility: visible;
+}
+.stop {
     overflow: hidden;
 }
-.dark:after{
+.dark:after {
     content: '';
     position: absolute;
     top: 0;
