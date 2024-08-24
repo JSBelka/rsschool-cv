@@ -3,6 +3,8 @@ let cardJennifer = document.getElementById('Jennifer');
 let popUpJennifer = document.getElementById('pop-up-Jennifer');
 let cardKatrine = document.getElementById('Katrine');
 let popUpKatrine = document.getElementById('pop-up-Katrine');
+let cardWoody = document.getElementById('Woody');
+let popUpWoody = document.getElementById('pop-up-Woody');
 let button = document.querySelector('.pop-up-button');
 
 cardKatrine.addEventListener("click", function() {
@@ -42,6 +44,23 @@ button.addEventListener("click", function(event) {
     }
 })
 
+cardWoody.addEventListener("click", function() {
+    popUpWoody.classList.toggle("hidden");
+    body.classList.toggle("stop");
+})
+
+document.addEventListener("click", function(event) {
+    if(!popUpWoody.includes(event.target)) {
+        popUpWoody.classList.toggle("hidden");
+        body.classList.remove("stop");
+    }
+})
+button.addEventListener("click", function(event) {
+    if(!popUpWoody.includes(event.target)) {
+        popUpWoody.classList.toggle("hidden");
+        body.classList.remove("stop");
+    }
+})
 
 // Burger-menu
 let burger = document.querySelector('.header-burger');
