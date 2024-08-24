@@ -1,7 +1,7 @@
 // Pop-up
 let cardJennifer = document.getElementById('Jennifer');
 let popUpJennifer = document.getElementById('pop-up-Jennifer');
-let cardKatrine = document.getElementById('Katrine');
+/*let cardKatrine = document.getElementById('Katrine');
 let popUpKatrine = document.getElementById('pop-up-Katrine');
 let cardWoody = document.getElementById('Woody');
 let popUpWoody = document.getElementById('pop-up-Woody');
@@ -14,7 +14,7 @@ let popUpCharly = document.getElementById('pop-up-Charly');
 let cardScarlett = document.getElementById('Scarlett');
 let popUpScarlett = document.getElementById('pop-up-Scarlett');
 let cardFreddie = document.getElementById('Freddie');
-let popUpFreddie = document.getElementById('pop-up-Freddie');
+let popUpFreddie = document.getElementById('pop-up-Freddie');*/
 let button = document.querySelector('.pop-up-button');
 
 //Katrine
@@ -49,6 +49,13 @@ cardJennifer.addEventListener("click", function() {
     popUpJennifer.classList.toggle("hidden");
     body.classList.toggle("stop");
 })
+document.addEventListener("click", function(event) {
+    if(!popUpKatrine.includes(event.target)) {
+        popUpKatrine.classList.toggle("hidden");
+        body.classList.remove("stop");
+    }
+})
+/*
 //Woody
 cardWoody.addEventListener("click", function() {
     popUpWoody.classList.toggle("hidden");
@@ -79,7 +86,7 @@ cardFreddie.addEventListener("click", function() {
     popUpFreddie.classList.toggle("hidden");
     body.classList.toggle("stop");
 })
-
+*/
 
 // Burger-menu
 let burger = document.querySelector('.header-burger');
