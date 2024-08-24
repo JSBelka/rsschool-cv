@@ -397,11 +397,16 @@ img {
 .pop-up-h1 {
     font-size: 33px;
     letter-spacing: 3px;
-    padding-bottom: 14px;
+    padding-bottom: 12px;
 }
 .pop-up-h3 {
     font-size: 21px;
-    letter-spacing: 1px;
+    letter-spacing: 0.6px;
+    padding-bottom: 40px;
+}
+.pop-up-h3-long {
+    font-size: 21px;
+    letter-spacing: 0.6px;
     padding-bottom: 40px;
 }
 .pop-up-p {
@@ -412,6 +417,12 @@ img {
     padding-right: 17px;
 }
 .pop-up-list {
+    list-style-position: inside;
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+}
+.pop-up-list-long {
     list-style-position: inside;
     display: flex;
     flex-direction: column;
@@ -662,6 +673,49 @@ img {
         display: none;
     }
 }
+@media screen and (max-width: 1000px) {
+    .pop-up-wrap {
+        width: 672px;
+        height: 402px;
+    }
+    .pop-up-content {
+        gap: 11px;
+        width: 630px;
+        height: 350px;
+    }
+    .Jennifer-modal {
+        width: 350px;
+        height: 350px;
+    }
+    .pop-up-text {
+        padding-top: 15px;
+    }
+    .pop-up-p {
+        padding-bottom: 20px;
+        font-size: 13px;
+        line-height: 14px;
+    }
+    .pop-up-h3 {
+        font-size: 21px;
+        letter-spacing: 0.6px;
+        padding-bottom: 20px;
+    }
+    .pop-up-h3-long {
+        font-size: 21px;
+        letter-spacing: 0.6px;
+        padding-bottom: 20px;
+    }
+    .pop-up-list {
+        gap: 5px;
+    }
+    .pop-up-list-long {
+        list-style-position: inside;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        font-size: 13px;
+    }
+}
 @media screen and (max-width: 769px) {
     .wrap {
         padding: 30px 30px 0;
@@ -846,6 +900,52 @@ img {
     .footer {
         justify-content: center;
         gap: 54px;
+    }
+}
+@media screen and (max-width: 700px) {
+    .pop-up-wrap {
+        width: 270px;
+        height: 393px;
+    }
+    .pop-up-content {
+        width: 240px;
+        height: 341px;
+    }
+    .Jennifer-modal {
+        display: none;
+    }
+    .pop-up-text {
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .pop-up-p {
+        padding: 0 0 23px 0;
+        font-size: 12px;
+        letter-spacing: 1px;
+    }
+    .pop-up-h1 {
+        margin-top: 3px;
+        padding-bottom: 13px;
+    }
+    .pop-up-h3 {
+        padding-bottom: 22px;
+    }
+    .pop-up-h3-long {
+        font-size: 17px;
+        padding-bottom: 22px;
+        letter-spacing: 0.6px;
+    }
+    .pop-up-list {
+        gap: 5px;
+        align-self: flex-start;
+        font-size: 15px;
+    }
+    .pop-up-list-long {
+        align-self: flex-start;
+        font-size: 13px;
     }
 }
 @media screen and (max-width: 630px) {

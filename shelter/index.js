@@ -81,7 +81,7 @@ burger.addEventListener("click", function () {
 let navItems = [...navItem].concat(nav,navList,burger,burgerMenu);
 
 document.addEventListener("click", function(event) {
-    if(!navItems.includes(event.target)) {
+    if(navItems.includes(event.target)) {
         nav.classList.remove("active");
         burger.classList.remove("active-burger");
         body.classList.remove("stop");
