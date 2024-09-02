@@ -1,7 +1,7 @@
 // Pop-up
 let cardJennifer = document.getElementById('Jennifer');
 let popUpJennifer = document.getElementById('pop-up-Jennifer');
-/*let cardKatrine = document.getElementById('Katrine');
+let cardKatrine = document.getElementById('Katrine');
 let popUpKatrine = document.getElementById('pop-up-Katrine');
 let cardWoody = document.getElementById('Woody');
 let popUpWoody = document.getElementById('pop-up-Woody');
@@ -14,7 +14,7 @@ let popUpCharly = document.getElementById('pop-up-Charly');
 let cardScarlett = document.getElementById('Scarlett');
 let popUpScarlett = document.getElementById('pop-up-Scarlett');
 let cardFreddie = document.getElementById('Freddie');
-let popUpFreddie = document.getElementById('pop-up-Freddie');*/
+let popUpFreddie = document.getElementById('pop-up-Freddie');
 let button = document.querySelector('.pop-up-button');
 
 //Katrine
@@ -22,14 +22,14 @@ cardKatrine.addEventListener("click", function() {
     popUpKatrine.classList.toggle("hidden");
     body.classList.toggle("stop");
 })
-/*настроить закрытие по кнопке и экрану!!!
+
 document.addEventListener("click", function(event) {
     if(!popUpKatrine.includes(event.target)) {
         popUpKatrine.classList.toggle("hidden");
         body.classList.remove("stop");
     }
 })
-button.addEventListener("click", function(event) {
+/*button.addEventListener("click", function(event) {
     if(!popUpKatrine.includes(event.target)) {
         popUpKatrine.classList.toggle("hidden");
         body.classList.remove("stop");
@@ -37,12 +37,13 @@ button.addEventListener("click", function(event) {
 })*/
 
 /*document.addEventListener("click", function(event) {
-    if (!popUpKatrine.includes(event.target) || !popUpJennifer.includes(event.target) || !popUpWoody.includes(event.target)) {
-        popUpKatrine.classList.toggle("hidden");
-        popUpWoody.classList.toggle("hidden");
-        popUpJennifer.classList.toggle("hidden");
-        body.classList.remove("stop");
+    if (!(!popUpKatrine.includes(event.target) || !popUpJennifer.includes(event.target) || !popUpWoody.includes(event.target))) {
+        return;
     }
+    popUpKatrine.classList.toggle("hidden");
+    popUpWoody.classList.toggle("hidden");
+    popUpJennifer.classList.toggle("hidden");
+    body.classList.remove("stop");
 }*/
 //Jennifer
 cardJennifer.addEventListener("click", function() {
@@ -55,14 +56,14 @@ document.addEventListener("click", function(event) {
         body.classList.remove("stop");
     }
 })
-/*
+
 //Woody
 cardWoody.addEventListener("click", function() {
     popUpWoody.classList.toggle("hidden");
     body.classList.toggle("stop");
 })
 //Sophia
-cardSophia.addEventListener("click", function() {
+/*cardSophia.addEventListener("click", function() {
     popUpSophia.classList.toggle("hidden");
     body.classList.toggle("stop");
 })
@@ -104,10 +105,10 @@ burger.addEventListener("click", function () {
     background.classList.toggle("dark");
 })
 
-let navItems = [...navItem].concat(nav,navList,burger,burgerMenu);
+/*let navItems = [...navItem].concat(nav,navList,burger,burgerMenu);*/
 
 document.addEventListener("click", function(event) {
-    if(navItems.includes(event.target)) {
+    if(nav.includes(event.target)) {
         nav.classList.remove("active");
         burger.classList.remove("active-burger");
         body.classList.remove("stop");
@@ -116,7 +117,7 @@ document.addEventListener("click", function(event) {
 })
 
 // Slider
-
+/*
 let arrowRight = document.getElementById('button-right');
 let arrowLeft = document.getElementById('button-left');
 let slider = document.querySelector(".cards-pets")
