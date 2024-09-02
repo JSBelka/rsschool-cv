@@ -870,10 +870,12 @@ img {
         align-items: center;
         top: 230px;
         gap: 37px;
+        transition: all 0.3s ease;
     }
     .nav-link{
         font-size: 32px;
         line-height: 51px;
+        transition: all 0.3s ease;
     }
     .pets {
         padding-top: 12px;
